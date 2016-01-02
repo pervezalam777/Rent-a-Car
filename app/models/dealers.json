@@ -1,0 +1,20 @@
+[
+	{
+		"dealerId": "d001",
+		"dealerName": "Dealer one",
+		"company": "Car on Rent",
+		"address": "a 340 dakshin puri",
+		"city": "delhi",
+		"state": "delhi",
+		"countary":"india" 
+	},
+	{
+		"dealerId": "d001",
+		"dealerName": "Dealer two",
+		"company": "Car on Rent",
+		"address": "a 340 dakshin puri",
+		"city": "delhi",
+		"state": "delhi",
+		"countary":"india" 
+	}
+]

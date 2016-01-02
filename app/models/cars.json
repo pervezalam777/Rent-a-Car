@@ -1,0 +1,21 @@
+[
+	{
+		"make":  "",
+		"model": "",
+		"dealerId": "d001",
+		"pincode":"110062",
+		"rentPerDay": 1500,
+		"km": 10000,
+		"images": ["url-not-defined"] 
+	},
+	{
+		"make":  "",
+		"model": "",
+		"dealerId": "d002",
+		"pincode":"110062",
+		"rentPerDay": 2500,
+		"km": 5000,
+		"images": ["url-not-defined"] 
+	}
+
+]
