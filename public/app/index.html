@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RentACarApp">
 <head>
 	<title>Rent A Car !!!</title>
 	<link rel="stylesheet" href="views/css/bootstrap.min.css">
-	
+	<link rel="stylesheet" href="views/css/rentacar.global.css">
 </head>
-<body>
-<h1>Rent A Car!!</h1>
+<body ng-controller="MainController as main">
 <div ng-view></div>
 
 <script type="text/javascript" src="lib/angular.min.1.4.4.js"></script>
 <script type="text/javascript" src="lib/angular-route.min.js"></script>
+<script type="text/javascript" src="controllers/appCtrl.js"></script>
 <script type="text/javascript" src="app.route.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </body>
