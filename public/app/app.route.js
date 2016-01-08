@@ -8,4 +8,9 @@ angular.module('appRoutes', ['ngRoute'])
 			controller:  'MainController',
 			controllerAs: 'main'
 		})
+		.when('/find', {
+			templateUrl: 'views/pages/rentACarPage.html',
+			controller:  'MainController',
+			controllerAs: 'main'
+		})
 }])
