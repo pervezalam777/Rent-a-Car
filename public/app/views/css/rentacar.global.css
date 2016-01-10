@@ -5,3 +5,16 @@
   display: flex;
   align-items: center;
 }
+
+.small-text {
+	font-size: 10px;
+}
+
+.small-padding {
+	padding-right: 5px;
+    padding-left: 5px;
+}
+
+.red {
+	background-color: red;
+}
