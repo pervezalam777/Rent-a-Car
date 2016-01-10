@@ -6,7 +6,7 @@
 		"pincode":"110062",
 		"rentPerDay": 1500,
 		"km": 10000,
-		"images": "views/images/d001.jpg" 
+		"image": "views/images/d001.jpg" 
 	},
 	{
 		"brand": "Honda",
@@ -15,7 +15,7 @@
 		"pincode":"110063",
 		"rentPerDay": 2500,
 		"km": 5000,
-		"images": "views/images/d002.jpg" 
+		"image": "views/images/d002.jpg" 
 	},
 	{
 		"brand": "Mahindra",
@@ -24,7 +24,7 @@
 		"pincode":"110064",
 		"rentPerDay": 7500,
 		"km": 10000,
-		"images": "views/images/d003.jpg" 
+		"image": "views/images/d003.jpg" 
 	},
 	{
 		"brand": "Maruti",
@@ -33,8 +33,8 @@
 		"pincode":"110065",
 		"rentPerDay": 10500,
 		"km": 80000,
-		"images": "views/images/d004.jpg" 
-	}
+		"image": "views/images/d004.jpg" 
+	},
 	{
 		"brand": "Hyundai",
 		"model": "Hyundai Tucson  2016",
@@ -42,8 +42,8 @@
 		"pincode":"110066",
 		"rentPerDay": 8500,
 		"km": 100000,
-		"images": "views/images/d005.jpg" 
-	}
+		"image": "views/images/d005.jpg" 
+	},
 	{
 		"brand": "Toyota",
 		"model": "Toyota New Innova  2016",
@@ -51,8 +51,8 @@
 		"pincode":"110067",
 		"rentPerDay": 9500,
 		"km": 90000,
-		"images": "views/images/d006.jpg" 
-	}
+		"image": "views/images/d006.jpg" 
+	},
 	{
 		"brand": "Ford",
 		"model": "Ford Mustang  2016",
@@ -60,8 +60,8 @@
 		"pincode":"110068",
 		"rentPerDay": 10500,
 		"km": 80000,
-		"images": "views/images/d007.jpg" 
-	}
+		"image": "views/images/d007.jpg" 
+	},
 	{
 		"brand": "Maruti",
 		"model": "Cervo  2017",
@@ -69,8 +69,8 @@
 		"pincode":"110069",
 		"rentPerDay": 7500,
 		"km": 90000,
-		"images": "views/images/d008.jpg" 
-	}
+		"image": "views/images/d008.jpg" 
+	},
 	{
 		"brand": "Tata",
 		"model": "Zica  2016",
@@ -78,8 +78,8 @@
 		"pincode":"110070",
 		"rentPerDay": 6500,
 		"km": 70000,
-		"images": "views/images/d009.jpg" 
-	}
+		"image": "views/images/d009.jpg" 
+	},
 	{
 		"brand": "Maruti",
 		"model": "Maruti iV-4  2016",
@@ -87,8 +87,8 @@
 		"pincode":"110071",
 		"rentPerDay": 5500,
 		"km": 50000,
-		"images": "views/images/d010.jpg" 
-	}
+		"image": "views/images/d010.jpg" 
+	},
 	{
 		"brand": "Honda",
 		"model": "CR-V Facelift  2016",
@@ -96,8 +96,8 @@
 		"pincode":"110072",
 		"rentPerDay": 6500,
 		"km": 65000,
-		"images": "views/images/d011.jpg" 
-	}
+		"image": "views/images/d011.jpg" 
+	},
 	{
 		"brand": "Hyundai",
 		"model": "i20 Sedan  2016",
@@ -105,8 +105,8 @@
 		"pincode":"110073",
 		"rentPerDay": 8500,
 		"km": 85000,
-		"images": "views/images/d012.jpg" 
-	}
+		"image": "views/images/d012.jpg" 
+	},
 	{
 		"brand": "Nissan",
 		"model": "X-Trail Facelift  2016",
@@ -114,8 +114,8 @@
 		"pincode":"110074",
 		"rentPerDay": 9500,
 		"km": 105000,
-		"images": "views/images/d013.jpg" 
-	}
+		"image": "views/images/d013.jpg" 
+	},
 	{
 		"brand": "Toyota",
 		"model": "Fortuner Facelift  2016",
@@ -123,8 +123,8 @@
 		"pincode":"110075",
 		"rentPerDay": 10500,
 		"km": 95000,
-		"images": "views/images/d014.jpg" 
-	}
+		"image": "views/images/d014.jpg" 
+	},
 	{
 		"brand": "Volkswagen",
 		"model": "Taigun  2016",
@@ -132,8 +132,8 @@
 		"pincode":"110075",
 		"rentPerDay": 10500,
 		"km": 95000,
-		"images": "views/images/d001.jpg" 
-	}
+		"image": "views/images/d001.jpg" 
+	},
 	{
 		"brand": "Tata",
 		"model": "Pelican  2016",
@@ -141,8 +141,8 @@
 		"pincode":"110076",
 		"rentPerDay": 7500,
 		"km": 75000,
-		"images": "views/images/d001.jpg" 
-	}
+		"image": "views/images/d001.jpg" 
+	},
 	{
 		"brand": "Jaguar",
 		"model": "XE  2016",
@@ -150,8 +150,8 @@
 		"pincode":"110077",
 		"rentPerDay": 10500,
 		"km": 90000,
-		"images": "views/images/d001.jpg" 
-	}
+		"image": "views/images/d001.jpg" 
+	},
 	{
 		"brand": "Maruti",
 		"model": "Wagon-R MPV  2016",
@@ -159,8 +159,8 @@
 		"pincode":"110078",
 		"rentPerDay": 5500,
 		"km": 50000,
-		"images": "views/images/d001.jpg" 
-	}
+		"image": "views/images/d001.jpg" 
+	},
 	{
 		"brand": "Hyundai",
 		"model": "Sonata Diesel  2016",
@@ -168,8 +168,8 @@
 		"pincode":"110079",
 		"rentPerDay": 8500,
 		"km": 60000,
-		"images": "views/images/d001.jpg" 
-	}
+		"image": "views/images/d001.jpg" 
+	},
 	{
 		"brand": "Hyundai",
 		"model": "Hexa Space MPV  2016",
@@ -177,7 +177,7 @@
 		"pincode":"110080",
 		"rentPerDay": 9500,
 		"km": 10000,
-		"images": "views/images/d001.jpg" 
+		"image": "views/images/d001.jpg" 
 	}
 
 ]
