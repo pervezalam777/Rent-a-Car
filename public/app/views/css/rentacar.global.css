@@ -5,3 +5,7 @@
   display: flex;
   align-items: center;
 }
+
+.small-text {
+	font-size: 10px;
+}

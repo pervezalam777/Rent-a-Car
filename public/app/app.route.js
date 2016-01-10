@@ -13,4 +13,9 @@ angular.module('appRoutes', ['ngRoute'])
 			controller:  'MainController',
 			controllerAs: 'main'
 		})
+		.when('/carlist', {
+			templateUrl: 'views/pages/carsPage.html',
+			controller:  'MainController',
+			controllerAs: 'main'
+		})
 }])
