@@ -1,7 +1,7 @@
 [
 	{
-		"make":  "",
-		"model": "",
+		"brand": "Maruti",
+		"model": "Vitara Brezza 2016",
 		"dealerId": "d001",
 		"pincode":"110062",
 		"rentPerDay": 1500,
@@ -9,12 +9,147 @@
 		"images": ["url-not-defined"] 
 	},
 	{
-		"make":  "",
-		"model": "",
+		"brand": "Honda",
+		"model": "BR-V-2016",
 		"dealerId": "d002",
-		"pincode":"110062",
+		"pincode":"110063",
 		"rentPerDay": 2500,
 		"km": 5000,
+		"images": ["url-not-defined"] 
+	},
+	{
+		"brand": "Mahindra",
+		"model": "KUV100",
+		"dealerId": "d003",
+		"pincode":"110064",
+		"rentPerDay": 7500,
+		"km": 10000,
+		"images": ["url-not-defined"] 
+	},
+	{
+		"brand": "Maruti",
+		"model": "XA Alpha 2016",
+		"dealerId": "d004",
+		"pincode":"110065",
+		"rentPerDay": 10500,
+		"km": 80000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Hyundai",
+		"model": "Hyundai Tucson  2016",
+		"dealerId": "d005",
+		"pincode":"110066",
+		"rentPerDay": 8500,
+		"km": 100000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Toyota",
+		"model": "Toyota New Innova  2016",
+		"dealerId": "d006",
+		"pincode":"110067",
+		"rentPerDay": 9500,
+		"km": 90000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Ford",
+		"model": "Ford Mustang  2016",
+		"dealerId": "d007",
+		"pincode":"110068",
+		"rentPerDay": 10500,
+		"km": 80000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Maruti",
+		"model": "Cervo  2017",
+		"dealerId": "d008",
+		"pincode":"110069",
+		"rentPerDay": 7500,
+		"km": 90000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Tata",
+		"model": "Zica  2016",
+		"dealerId": "d009",
+		"pincode":"110070",
+		"rentPerDay": 6500,
+		"km": 70000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Maruti",
+		"model": "Maruti iV-4  2016",
+		"dealerId": "d010",
+		"pincode":"110071",
+		"rentPerDay": 5500,
+		"km": 50000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Honda",
+		"model": "CR-V Facelift  2016",
+		"dealerId": "d011",
+		"pincode":"110072",
+		"rentPerDay": 6500,
+		"km": 65000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Hyundai",
+		"model": "i20 Sedan  2016",
+		"dealerId": "d012",
+		"pincode":"110073",
+		"rentPerDay": 8500,
+		"km": 85000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Nissan",
+		"model": "X-Trail Facelift  2016",
+		"dealerId": "d013",
+		"pincode":"110074",
+		"rentPerDay": 9500,
+		"km": 105000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Toyota",
+		"model": "Fortuner Facelift  2016",
+		"dealerId": "d014",
+		"pincode":"110075",
+		"rentPerDay": 10500,
+		"km": 95000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Volkswagen",
+		"model": "Taigun  2016",
+		"dealerId": "d015",
+		"pincode":"110075",
+		"rentPerDay": 10500,
+		"km": 95000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Tata",
+		"model": "Pelican  2016",
+		"dealerId": "d016",
+		"pincode":"110076",
+		"rentPerDay": 7500,
+		"km": 75000,
+		"images": ["url-not-defined"] 
+	}
+	{
+		"brand": "Jaguar",
+		"model": "XE  2016",
+		"dealerId": "d016",
+		"pincode":"110076",
+		"rentPerDay": 7500,
+		"km": 75000,
 		"images": ["url-not-defined"] 
 	}
 

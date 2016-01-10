@@ -1,6 +1,6 @@
-angular.module('appRoutes', ['ngRoute'])
+var RentACarApp = angular.module('appRoutes', ['ngRoute'])
 
-.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
+RentACarApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 
 	$routeProvider
 		.when('/', {
@@ -13,9 +13,25 @@ angular.module('appRoutes', ['ngRoute'])
 			controller:  'MainController',
 			controllerAs: 'main'
 		})
-		.when('/carlist', {
+		.when('/cars', {
 			templateUrl: 'views/pages/carsPage.html',
-			controller:  'MainController',
+			controller: 'MainController',
 			controllerAs: 'main'
+		})
+		.when('/dealers',{
+			templateUrl: 'views/pages/dealersPage.html',
+			controller: 'MainController',
+			controllerAs: 'main'
+		})
+		.when('/rentmycar', {
+			templateUrl: 'views/pages/putACarOnRentPage.html',
+			controller: 'MainController',
+			controllerAs: 'main'
+		})
+		.when('/rentform', {
+			templateUrl: 'views/pages/rentItPage.html',
+			controller: 'MainController',
+			controllerAs: 'main'
+
 		})
 }])
