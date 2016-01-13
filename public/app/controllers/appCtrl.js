@@ -1,7 +1,7 @@
 angular.module('mainCtrl', [])
 
 
-.controller("MainController", function($scope,$location){
+.controller("MainController", function($scope,$location,$http){
 	$scope.rentaCar = function(){
 			console.log("Rent a car is called");
 			$location.path('/find');
@@ -33,9 +33,16 @@ angular.module('mainCtrl', [])
 				$scope.message = "This is not a valid pincode, pincode should be of 6 digit";
 			}
 			else {
-				$scope.message = "Thanks for entering a valid pincode"
-				$location.path('/cars')
-			}
+				$scope.message = "Thanks for entering a valid pincode";
+				$http.get("../../app/models/cars.json")
+		        .then(function(response){ 
+		        	$scope.dataset = response.data; 
+		        	console.log($scope.dataset);
+
+		        });
+		        $location.path('/cars')
+				
+		    }
 
 		}
 
