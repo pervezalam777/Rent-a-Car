@@ -26,16 +26,7 @@ angular.module('mainCtrl', [])
 			}
 			else {
 				$scope.message = "Thanks for entering a valid pincode";
-		        $location.path('/cars')
-
-				//$scope.message = "Thanks for entering a valid pincode";
-				$scope.dataset = [];
-				$http.get("../../app/models/cars.json")
-		        .then(function(response){ 
-		        	$scope.dataset = response.data; 
-		        	console.log($scope.dataset);
-		        });
-		        $location.path('/cars');
+				$location.path('/cars');
 		    }
 		}
 })
@@ -46,17 +37,15 @@ $http.get("../../app/models/cars.json")
        .then(function(response){ 
        	$scope.dataset = response.data; 
         console.log($scope.dataset);
-       });
-});
+})
 
 .controller("DealerController", function($scope,$location,$http){
-	
-});
+})
 
 
 .controller("RentYourCarController", function($scope,$location,$http){
-});
+})
 
 
 .controller("RentCarController", function($scope,$location,$http){
-});
+})
