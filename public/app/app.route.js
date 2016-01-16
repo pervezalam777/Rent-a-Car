@@ -15,23 +15,23 @@ RentACarApp.config(["$routeProvider", "$locationProvider", function($routeProvid
 		})
 		.when('/cars', {
 			templateUrl: 'views/pages/carsPage.html',
-			controller: 'MainController',
-			controllerAs: 'main'
+			controller: 'CarsController',
+			controllerAs: 'carPages'
 		})
 		.when('/dealers',{
 			templateUrl: 'views/pages/dealersPage.html',
-			controller: 'MainController',
-			controllerAs: 'main'
+			controller: 'DealerController',
+			controllerAs: 'dealerPage'
 		})
 		.when('/rentmycar', {
 			templateUrl: 'views/pages/putACarOnRentPage.html',
-			controller: 'MainController',
-			controllerAs: 'main'
+			controller: 'RentYourCarController',
+			controllerAs: 'rentYourCar'
 		})
 		.when('/rentform', {
 			templateUrl: 'views/pages/rentItPage.html',
-			controller: 'MainController',
-			controllerAs: 'main'
+			controller: 'RentCarController',
+			controllerAs: 'rentCar'
 
 		})
 }])

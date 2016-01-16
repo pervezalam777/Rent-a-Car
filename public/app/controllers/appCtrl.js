@@ -1,32 +1,22 @@
 angular.module('mainCtrl', [])
 
-
 .controller("MainController", function($scope,$location,$http){
 	$scope.rentaCar = function(){
-			console.log("Rent a car is called");
 			$location.path('/find');
-
-
-			
 		};
 
 		$scope.addCarforRent = function(){
-			console.log("Add car for rent is called");
 		};
+
 		$scope.gotoCarList = function(){
 			var pincodeValue = 	$scope.pincode;
-			console.log(pincodeValue);
 			$scope.message = "";
-
-
 
 			if(pincodeValue == " " || pincodeValue == null){
 				$scope.message = "Pincode is required";
-
 			}
 			else if(isNaN(pincodeValue)) {
 				$scope.message = "This is not a numbers";
-
 			}
 			else if (pincodeValue.length !== 6 )
 			{
@@ -34,20 +24,28 @@ angular.module('mainCtrl', [])
 			}
 			else {
 				$scope.message = "Thanks for entering a valid pincode";
-				$http.get("../../app/models/cars.json")
-		        .then(function(response){ 
-		        	$scope.dataset = response.data; 
-		        	console.log($scope.dataset);
-
-		        });
 		        $location.path('/cars')
-				
 		    }
-
 		}
-
-
 })
 
+.controller("CarsController", function($scope,$location,$http){
+$scope.dataset = [];
+$http.get("../../app/models/cars.json")
+       .then(function(response){ 
+       	$scope.dataset = response.data; 
+        console.log($scope.dataset);
+       });
+});
+
+.controller("DealerController", function($scope,$location,$http){
+	
+});
 
 
+.controller("RentYourCarController", function($scope,$location,$http){
+});
+
+
+.controller("RentCarController", function($scope,$location,$http){
+});
