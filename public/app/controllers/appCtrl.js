@@ -36,7 +36,8 @@ $scope.dataset = [];
 $http.get("../../app/models/cars.json")
        .then(function(response){ 
        	$scope.dataset = response.data; 
-        console.log($scope.dataset);
+        console.log($scope.dataset)
+       })
 })
 
 .controller("DealerController", function($scope,$location,$http){
