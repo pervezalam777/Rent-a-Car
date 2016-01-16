@@ -14,14 +14,29 @@
 					<br/>
 					<div class="row">
 						<div class="col-sm-12">
-							<strong>FUEL: </strong><span>Diesel</span>
+							<strong>{{item.model}}</strong>
 						</div>
 						<div class="col-sm-12">
-							<strong>KMs RUN: </strong><span>45,270Kms</span>
+							<strong>{{item.dealerId}}</strong>
 						</div>
 						<div class="col-sm-12">
-							<strong>Per Day Price(INR) : </strong><span>2000</span>
+							<strong>{{item.pincode}}</strong>
 						</div>
+						<div class="col-sm-12">
+							<strong>{{item.rentPerDay}}</strong>
+						</div>
+
+						<div class="col-sm-12">
+							<strong>{{item.km}}</strong>
+						</div>
+						<div class="col-sm-12">
+							<strong>{{item.fueltype}}</strong>
+						</div>
+						
+						<div class="col-sm-12">
+							<img ng-src="{{item.image}}"/>
+						</div>
+												
 						<div class="col-xs-12 col-xs-offset-4">
 							<button type="button" class="btn btn-link">Rent It!!</button>
 						</div>
