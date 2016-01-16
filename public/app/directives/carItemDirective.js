@@ -3,7 +3,6 @@
 .directive("carItem",  function() {
 	return{
 		templateUrl: 'directives/carItem.html'
-		
 	}
 	
 })
