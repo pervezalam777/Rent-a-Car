@@ -3,6 +3,8 @@ angular.module('mainCtrl', [])
 .controller("MainController", function($scope,$location,$http){
 	$scope.rentaCar = function(){
 			$location.path('/find');
+			console.log("Rent a car is called");
+			$location.path('/find');			
 		};
 
 		$scope.addCarforRent = function(){
@@ -25,6 +27,15 @@ angular.module('mainCtrl', [])
 			else {
 				$scope.message = "Thanks for entering a valid pincode";
 		        $location.path('/cars')
+
+				//$scope.message = "Thanks for entering a valid pincode";
+				$scope.dataset = [];
+				$http.get("../../app/models/cars.json")
+		        .then(function(response){ 
+		        	$scope.dataset = response.data; 
+		        	console.log($scope.dataset);
+		        });
+		        $location.path('/cars');
 		    }
 		}
 })
