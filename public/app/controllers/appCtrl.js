@@ -31,13 +31,30 @@ angular.module('mainCtrl', [])
 		}
 })
 
-.controller("CarsController", function($scope,$location,$http){
+.controller("CarsController", function($scope,$rootScope,$location,$http, rentACarFactory){
 $scope.dataset = [];
 $http.get("../../app/models/cars.json")
        .then(function(response){ 
        	$scope.dataset = response.data; 
         console.log($scope.dataset)
        })
+
+$scope.rentCar= function(){ 
+	$scope.carId = event.target.id;
+	console.log(rentACarFactory.getData($scope.carId));
+	$location.path('/rentform');
+   }
+ 
+})
+
+.factory("rentACarFactory", function(){
+	var sharedData = ""
+		return {
+			getData: function(sharedData){
+				return sharedData;
+			}
+		}
+
 })
 
 .controller("DealerController", function($scope,$location,$http){
@@ -48,5 +65,7 @@ $http.get("../../app/models/cars.json")
 })
 
 
-.controller("RentCarController", function($scope,$location,$http){
+.controller("RentCarController", function($scope,$rootScope,$routeParams,$location,$http, rentACarFactory){
+alert($routeParams.param);
+console.log(rentACarFactory.getData());
 })

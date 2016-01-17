@@ -23,7 +23,7 @@
 							<strong>Per Day Price(INR) : </strong><span>{{item.rentPerDay}}</span>
 						</div>
 						<div class="col-xs-12 col-xs-offset-4">
-							<button type="button" class="btn btn-link">Rent It!!</button>
+							<button ng-click="rentCar()" type="button" class="btn btn-link" id="{{item.carId}}">Rent It!!</button>
 						</div>
 					</div>
 				</div>

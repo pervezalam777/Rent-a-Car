@@ -28,7 +28,7 @@ RentACarApp.config(["$routeProvider", "$locationProvider", function($routeProvid
 			controller: 'RentYourCarController',
 			controllerAs: 'rentYourCar'
 		})
-		.when('/rentform', {
+		.when('/rentform/:param', {
 			templateUrl: 'views/pages/rentItPage.html',
 			controller: 'RentCarController',
 			controllerAs: 'rentCar'
