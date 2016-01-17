@@ -31,7 +31,7 @@ angular.module('mainCtrl', [])
 		}
 })
 
-.controller("CarsController", function($scope,$rootScope,$location,$http, rentACarFactory){
+.controller("CarsController", function($scope,$rootScope,$location,$http){
 $scope.dataset = [];
 $http.get("../../app/models/cars.json")
        .then(function(response){ 
@@ -41,20 +41,9 @@ $http.get("../../app/models/cars.json")
 
 $scope.rentCar= function(){ 
 	$scope.carId = event.target.id;
-	console.log(rentACarFactory.getData($scope.carId));
-	$location.path('/rentform');
+	$location.path('/rentform/' + $scope.carId);
    }
  
-})
-
-.factory("rentACarFactory", function(){
-	var sharedData = ""
-		return {
-			getData: function(sharedData){
-				return sharedData;
-			}
-		}
-
 })
 
 .controller("DealerController", function($scope,$location,$http){
@@ -65,7 +54,5 @@ $scope.rentCar= function(){
 })
 
 
-.controller("RentCarController", function($scope,$rootScope,$routeParams,$location,$http, rentACarFactory){
-alert($routeParams.param);
-console.log(rentACarFactory.getData());
+.controller("RentCarController", function($scope,$rootScope,$routeParams,$location,$http){
 })
