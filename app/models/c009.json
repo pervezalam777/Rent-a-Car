@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Tata",
+		"carId": "c009",
+		"model": "Zica  2016",
+		"dealerId": "d009",
+		"pincode":"110070",
+		"rentPerDay": 6500,
+		"km": 70000,
+		"fuelType": "LPG",
+		"image": "views/images/d009.jpg",
+		"seater": 3,
+		"ac": "No",
+		"carColor": "Pink",
+		"security": 9000,
+		"documents": "Photo" 
+	}
+
+]

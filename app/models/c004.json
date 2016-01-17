@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Maruti",
+		"carId": "c004",
+		"model": "XA Alpha 2016",
+		"dealerId": "d004",
+		"pincode":"110065",
+		"rentPerDay": 10500,
+		"km": 80000,
+		"fuelType": "Petrol",
+		"image": "views/images/d004.jpg",
+		"seater": 4,
+		"ac": "Yes",
+		"carColor": "Orange",
+		"security": "Not Applicable",
+		"documents": "Aadhar Card" 
+	}
+
+]

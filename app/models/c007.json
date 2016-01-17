@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Ford",
+		"carId": "c007",
+		"model": "Ford Mustang  2016",
+		"dealerId": "d007",
+		"pincode":"110068",
+		"rentPerDay": 10500,
+		"km": 80000,
+		"fuelType": "Ethanol",
+		"image": "views/images/d007.jpg",
+		"seater": 10,
+		"ac": "Yes",
+		"carColor": "Brown",
+		"security": 4500,
+		"documents": "No Applicable" 
+	}
+
+]

@@ -1,0 +1,19 @@
+[
+{
+		"brand": "Honda",
+		"carId": "c002",
+		"model": "BR-V-2016",
+		"dealerId": "d002",
+		"pincode":"110063",
+		"rentPerDay": 2500,
+		"km": 5000,
+		"fuelType": "Petrol",
+		"image": "views/images/d002.jpg",
+		"seater": 8,
+		"ac": "Yes",
+		"carColor": "Steel",
+		"security": "Not Applicable",
+		"documents": "Aadhar Card" 
+	}
+
+]

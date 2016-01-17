@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Mahindra",
+		"carId": "c003",
+		"model": "KUV100",
+		"dealerId": "d003",
+		"pincode":"110064",
+		"rentPerDay": 7500,
+		"km": 10000,
+		"fuelType": "Both",
+		"image": "views/images/d003.jpg",
+		"seater": 6,
+		"ac": "Yes",
+		"carColor": "SkyBlue",
+		"security": 7500,
+		"documents": "Aadhar Card and Photo ID" 
+	}
+
+]

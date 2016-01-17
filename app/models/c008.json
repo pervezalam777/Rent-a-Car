@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Maruti",
+		"carId": "c008",
+		"model": "Cervo  2017",
+		"dealerId": "d008",
+		"pincode":"110069",
+		"rentPerDay": 7500,
+		"km": 90000,
+		"fuelType": "PNG",
+		"image": "views/images/d008.jpg",
+		"seater": 6,
+		"ac": "Yes",
+		"carColor": "White",
+		"security": 7800,
+		"documents": "Passport and PhotoId" 
+	}
+
+]

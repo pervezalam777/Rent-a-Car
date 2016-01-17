@@ -4,9 +4,10 @@
 		"carId": "c001",
 		"model": "Vitara Brezza 2016",
 		"dealerId": "d001",
-		"pincode":"110062",
+		"pincode":"110077",
 		"rentPerDay": 1500,
 		"km": 10000,
+		"fuelType": "Diesel",
 		"image": "views/images/d001.jpg" 
 	},
 	{
@@ -14,9 +15,10 @@
 		"carId": "c002",
 		"model": "BR-V-2016",
 		"dealerId": "d002",
-		"pincode":"110063",
+		"pincode":"110078",
 		"rentPerDay": 2500,
 		"km": 5000,
+		"fuelType": "Petrol",
 		"image": "views/images/d002.jpg" 
 	},
 	{
@@ -24,9 +26,10 @@
 		"carId": "c003",
 		"model": "KUV100",
 		"dealerId": "d003",
-		"pincode":"110064",
+		"pincode":"110078",
 		"rentPerDay": 7500,
 		"km": 10000,
+		"fuelType": "Both",
 		"image": "views/images/d003.jpg" 
 	},
 	{
@@ -34,9 +37,10 @@
 		"carId": "c004",
 		"model": "XA Alpha 2016",
 		"dealerId": "d004",
-		"pincode":"110065",
+		"pincode":"110078",
 		"rentPerDay": 10500,
 		"km": 80000,
+		"fuelType": "Petrol",
 		"image": "views/images/d004.jpg" 
 	},
 	{
@@ -44,9 +48,10 @@
 		"carId": "c005",
 		"model": "Hyundai Tucson  2016",
 		"dealerId": "d005",
-		"pincode":"110066",
+		"pincode":"110075",
 		"rentPerDay": 8500,
 		"km": 100000,
+		"fuelType": "CNG",
 		"image": "views/images/d005.jpg" 
 	},
 	{
@@ -54,9 +59,10 @@
 		"carId": "c006",
 		"model": "Toyota New Innova  2016",
 		"dealerId": "d006",
-		"pincode":"110067",
+		"pincode":"110077",
 		"rentPerDay": 9500,
 		"km": 90000,
+		"fuelType": "Electric",
 		"image": "views/images/d006.jpg" 
 	},
 	{
@@ -64,9 +70,10 @@
 		"carId": "c007",
 		"model": "Ford Mustang  2016",
 		"dealerId": "d007",
-		"pincode":"110068",
+		"pincode":"110076",
 		"rentPerDay": 10500,
 		"km": 80000,
+		"fuelType": "Ethanol",
 		"image": "views/images/d007.jpg" 
 	},
 	{
@@ -74,9 +81,10 @@
 		"carId": "c008",
 		"model": "Cervo  2017",
 		"dealerId": "d008",
-		"pincode":"110069",
+		"pincode":"110074",
 		"rentPerDay": 7500,
 		"km": 90000,
+		"fuelType": "PNG",
 		"image": "views/images/d008.jpg" 
 	},
 	{
@@ -84,19 +92,21 @@
 		"carId": "c009",
 		"model": "Zica  2016",
 		"dealerId": "d009",
-		"pincode":"110070",
+		"pincode":"110073",
 		"rentPerDay": 6500,
 		"km": 70000,
+		"fuelType": "LPG",
 		"image": "views/images/d009.jpg" 
 	},
 	{
 		"brand": "Maruti",
-		"carId": "c0010",
+		"carId": "c010",
 		"model": "Maruti iV-4  2016",
 		"dealerId": "d010",
 		"pincode":"110071",
 		"rentPerDay": 5500,
 		"km": 50000,
+		"fuelType": "Water",
 		"image": "views/images/d010.jpg" 
 	},
 	{
@@ -107,6 +117,7 @@
 		"pincode":"110072",
 		"rentPerDay": 6500,
 		"km": 65000,
+		"fuelType": "Hydrogen",
 		"image": "views/images/d011.jpg" 
 	},
 	{
@@ -117,6 +128,7 @@
 		"pincode":"110073",
 		"rentPerDay": 8500,
 		"km": 85000,
+		"fuelType": "Helium",
 		"image": "views/images/d012.jpg" 
 	},
 	{
@@ -127,6 +139,7 @@
 		"pincode":"110074",
 		"rentPerDay": 9500,
 		"km": 105000,
+		"fuelType": "Petrol",
 		"image": "views/images/d013.jpg" 
 	},
 	{
@@ -137,6 +150,7 @@
 		"pincode":"110075",
 		"rentPerDay": 10500,
 		"km": 95000,
+		"fuelType": "Air",
 		"image": "views/images/d014.jpg" 
 	},
 	{
@@ -147,6 +161,7 @@
 		"pincode":"110075",
 		"rentPerDay": 10500,
 		"km": 95000,
+		"fuelType": "CNG",
 		"image": "views/images/d015.jpg" 
 	},
 	{
@@ -157,6 +172,7 @@
 		"pincode":"110076",
 		"rentPerDay": 7500,
 		"km": 75000,
+		"fuelType": "Both",
 		"image": "views/images/d016.jpg" 
 	},
 	{
@@ -167,6 +183,7 @@
 		"pincode":"110077",
 		"rentPerDay": 10500,
 		"km": 90000,
+		"fuelType": "Diesel",
 		"image": "views/images/d017.jpg" 
 	},
 	{
@@ -174,9 +191,10 @@
 		"carId": "c018",
 		"model": "Wagon-R MPV  2016",
 		"dealerId": "d018",
-		"pincode":"110078",
+		"pincode":"110077",
 		"rentPerDay": 5500,
 		"km": 50000,
+		"fuelType": "Ethanol",
 		"image": "views/images/d018.jpg" 
 	},
 	{
@@ -187,6 +205,7 @@
 		"pincode":"110079",
 		"rentPerDay": 8500,
 		"km": 60000,
+		"fuelType": "Diesel",
 		"image": "views/images/d019.jpg" 
 	},
 	{
@@ -194,9 +213,10 @@
 		"carId": "c020",
 		"model": "Hexa Space MPV  2016",
 		"dealerId": "d020",
-		"pincode":"110080",
+		"pincode":"110076",
 		"rentPerDay": 9500,
 		"km": 10000,
+		"fuelType": "Air",
 		"image": "views/images/d020.jpg" 
 	}
 

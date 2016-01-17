@@ -8,10 +8,12 @@ angular.module('mainCtrl', [])
 		};
 
 		$scope.addCarforRent = function(){
+			$location.path("/rentmycar");
 		};
 
 		$scope.gotoCarList = function(){
 			var pincodeValue = 	$scope.pincode;
+
 			$scope.message = "";
 
 			if(pincodeValue == " " || pincodeValue == null){
@@ -26,18 +28,19 @@ angular.module('mainCtrl', [])
 			}
 			else {
 				$scope.message = "Thanks for entering a valid pincode";
-				$location.path('/cars');
+				$location.path('/cars/' + $scope.pincode);
 		    }
 		}
 })
 
-.controller("CarsController", function($scope,$rootScope,$location,$http){
+.controller("CarsController", function($scope,$location,$http,$routeParams){
 $scope.dataset = [];
 $http.get("../../app/models/cars.json")
        .then(function(response){ 
        	$scope.dataset = response.data; 
-        console.log($scope.dataset)
-       })
+        $scope.carFilter = $routeParams.param;
+        
+})
 
 $scope.rentCar= function(){ 
 	$scope.carId = event.target.id;
@@ -51,8 +54,16 @@ $scope.rentCar= function(){
 
 
 .controller("RentYourCarController", function($scope,$location,$http){
-})
+})	
 
 
-.controller("RentCarController", function($scope,$rootScope,$routeParams,$location,$http){
+.controller("RentCarController", function($scope,$location,$http,$routeParams){
+$scope.carData = ""
+$http.get("../../app/models/" + $routeParams.param + ".json")
+       .then(function(response){ 
+       	$scope.carData = response.data; 
+        console.log($scope.carData[0]);
+       })
+
+
 })

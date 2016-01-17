@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Tata",
+		"carId": "c016",
+		"model": "Pelican  2016",
+		"dealerId": "d016",
+		"pincode":"110076",
+		"rentPerDay": 7500,
+		"km": 75000,
+		"fuelType": "Both",
+		"image": "views/images/d016.jpg",
+		"seater": 8,
+		"ac": "No",
+		"carColor": "Black",
+		"security": 6000,
+		"documents": "Voters ID" 
+	}
+
+]

@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Toyota",
+		"carId": "c006",
+		"model": "Toyota New Innova  2016",
+		"dealerId": "d006",
+		"pincode":"110067",
+		"rentPerDay": 9500,
+		"km": 90000,
+		"fuelType": "Electric",
+		"image": "views/images/d006.jpg",
+		"seater": 8,
+		"ac": "Yes",
+		"carColor": "Peach",
+		"security": 4300,
+		"documents": "No Applicable" 
+	}
+
+]

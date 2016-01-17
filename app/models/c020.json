@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Hyundai",
+		"carId": "c020",
+		"model": "Hexa Space MPV  2016",
+		"dealerId": "d020",
+		"pincode":"110080",
+		"rentPerDay": 9500,
+		"km": 10000,
+		"fuelType": "Air",
+		"image": "views/images/d020.jpg",
+		"seater": 4,
+		"ac": "Yes",
+		"carColor": "Teal",
+		"security": 2000,
+		"documents": "Aadhar Card and Photo ID" 
+	}
+
+]

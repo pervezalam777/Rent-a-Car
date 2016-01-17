@@ -1,0 +1,19 @@
+[
+	{
+		"brand": "Maruti",
+		"carId": "c001",
+		"model": "Vitara Brezza 2016",
+		"dealerId": "d001",
+		"pincode":"110062",
+		"rentPerDay": 1500,
+		"km": 10000,
+		"image": "views/images/d001.jpg",
+		"seater": 5,
+		"fueltype": "Diesel",
+		"ac": "Yes",
+		"carColor": "Orange",
+		"security": "Not Applicable",
+		"documents": "Aadhar Card" 
+	}
+
+]

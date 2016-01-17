@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Hyundai",
+		"carId": "c005",
+		"model": "Hyundai Tucson  2016",
+		"dealerId": "d005",
+		"pincode":"110066",
+		"rentPerDay": 8500,
+		"km": 100000,
+		"fuelType": "CNG",
+		"image": "views/images/d005.jpg",
+		"seater": 12,
+		"ac": "No",
+		"carColor": "Gold",
+		"security": 2300,
+		"documents": "Photo and Photo ID" 
+	}
+
+]

@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Hyundai",
+		"carId": "c019",
+		"model": "Sonata Diesel  2016",
+		"dealerId": "d019",
+		"pincode":"110079",
+		"rentPerDay": 8500,
+		"km": 60000,
+		"fuelType": "Diesel",
+		"image": "views/images/d019.jpg",
+		"seater": 5,
+		"ac": "No",
+		"carColor": "Cyan",
+		"security": 1000,
+		"documents": "Photo Id" 
+	}
+
+]

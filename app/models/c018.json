@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Maruti",
+		"carId": "c018",
+		"model": "Wagon-R MPV  2016",
+		"dealerId": "d018",
+		"pincode":"110078",
+		"rentPerDay": 5500,
+		"km": 50000,
+		"fuelType": "Ethanol",
+		"image": "views/images/d018.jpg",
+		"seater": 7,
+		"ac": "Yes",
+		"carColor": "Green",
+		"security": 5000,
+		"documents": "Passport" 
+	}
+
+]

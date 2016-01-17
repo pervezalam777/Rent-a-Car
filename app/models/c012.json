@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Hyundai",
+		"carId": "c012",
+		"model": "i20 Sedan  2016",
+		"dealerId": "d012",
+		"pincode":"110073",
+		"rentPerDay": 8500,
+		"km": 85000,
+		"fuelType": "Helium",
+		"image": "views/images/d012.jpg",
+		"seater": 6,
+		"ac": "No",
+		"carColor": "Yellow",
+		"security": 3500,
+		"documents": "No Applicable" 
+	}
+
+]

@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Toyota",
+		"carId": "c014",
+		"model": "Fortuner Facelift  2016",
+		"dealerId": "d014",
+		"pincode":"110075",
+		"rentPerDay": 10500,
+		"km": 95000,
+		"fuelType": "Air",
+		"image": "views/images/d014.jpg",
+		"seater": 8,
+		"ac": "No",
+		"carColor": "Blue",
+		"security": 1000,
+		"documents": "Aadhar Card and Voters Id" 
+	}
+
+]

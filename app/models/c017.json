@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Jaguar",
+		"carId": "c017",
+		"model": "XE  2016",
+		"dealerId": "d017",
+		"pincode":"110077",
+		"rentPerDay": 10500,
+		"km": 90000,
+		"fuelType": "Diesel",
+		"image": "views/images/d017.jpg",
+		"seater": 3,
+		"ac": "No",
+		"carColor": "Grey",
+		"security": 3000,
+		"documents": "Passport and Aadhar Card" 
+	}
+
+]

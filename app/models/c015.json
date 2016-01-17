@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Volkswagen",
+		"carId": "c015",
+		"model": "Taigun  2016",
+		"dealerId": "d015",
+		"pincode":"110075",
+		"rentPerDay": 10500,
+		"km": 95000,
+		"fuelType": "CNG",
+		"image": "views/images/d015.jpg",
+		"seater": 8,
+		"ac": "Yes",
+		"carColor": "Silver",
+		"security": "Not Applicable",
+		"documents": "Company Id" 
+	}
+
+]

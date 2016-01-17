@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Maruti",
+		"carId": "c010",
+		"model": "Maruti iV-4  2016",
+		"dealerId": "d010",
+		"pincode":"110071",
+		"rentPerDay": 5500,
+		"km": 50000,
+		"fuelType": "Water",
+		"image": "views/images/d010.jpg",
+		"seater": 5,
+		"ac": "No",
+		"carColor": "Indigo",
+		"security": "Not Applicable",
+		"documents": "No Applicable" 
+	}
+
+]

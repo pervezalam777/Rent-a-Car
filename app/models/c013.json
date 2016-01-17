@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Nissan",
+		"carId": "c013",
+		"model": "X-Trail Facelift  2016",
+		"dealerId": "d013",
+		"pincode":"110074",
+		"rentPerDay": 9500,
+		"km": 105000,
+		"fuelType": "Petrol",
+		"image": "views/images/d013.jpg",
+		"seater": 5,
+		"ac": "No",
+		"carColor": "Red",
+		"security": "Not Applicable",
+		"documents": "Aadhar Card" 
+	}
+
+]

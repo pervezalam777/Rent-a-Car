@@ -1,0 +1,19 @@
+[
+{
+	"brand": "Honda",
+		"carId": "c011",
+		"model": "CR-V Facelift  2016",
+		"dealerId": "d011",
+		"pincode":"110072",
+		"rentPerDay": 6500,
+		"km": 65000,
+		"fuelType": "Hydrogen",
+		"image": "views/images/d011.jpg",
+		"seater": 4,
+		"ac": "Yes",
+		"carColor": "Violet",
+		"security": 4500,
+		"documents": "Aadhar Card and Photo" 
+	}
+
+]
