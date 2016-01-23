@@ -1,6 +1,6 @@
-<div><label>Brand:</label> {{carData[0].brand}}</div>
+<!--div><label>Brand:</label> {{carData[0].brand}}</div>
 <div><label>Car Id:</label> {{carData[0].carId}}</div>
-<div><label>Model:</label> {{carData[0].model}}</div>
+<div><label>Model:</label> {{carData[0].brand}}</div>
 <div><label>Dealer Id:</label> {{carData[0].dealerId}}</div>
 <div><label>Pincode:</label> {{carData[0].pincode}}</div>
 <div><label>Rent per Day:</label> {{carData[0].rentPerDay}}</div>
@@ -11,4 +11,75 @@
 <div><label>AC Car:</label> {{carData[0].ac}}</div>
 <div><label>Car Color:</label> {{carData[0].carColor}}</div>
 <div><label>Security Deposit: </label> {{carData[0].security}}</div>
-<div><label>Documents Required for Renting: </label> {{carData[0].documents}}</div>
+<div><label>Documents Required for Renting: </label> {{carData[0].documents}}</div-->
+
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-12">
+	<div class="row">
+		<div class="col-xs-11 col-sm-6 col-md-6 col-lg-4 small-padding">
+			<img ng-src="{{carData[0].image}}" class="img-thumbnail img-responsive" alt="Cinque Terre" width="100%" height="100%">
+		</div>
+		<div class="col-xs-11 col-sm-8 col-md-6 col-lg-6 small-padding">
+			<div class="row">
+				<div class="col-sm-12 small">
+					<div class="row">
+						<div class="col-sm-12">
+							<strong>{{carData[0].brand}} {{carData[0].brand}}</strong>
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-sm-12">
+							<strong>FUEL: </strong><span>{{carData[0].fuelType}}</span>
+						</div>
+						<div class="col-sm-12">
+							<strong>KMs RUN: </strong><span>{{carData[0].km}} Kms</span>
+						</div>
+						<div class="col-sm-12">
+							<strong>AC Car: </strong><span>{{carData[0].ac}}</span>
+						</div>
+						<div class="col-sm-12">
+							<strong>Car Color: </strong><span>{{carData[0].carColor}}</span>
+						</div>
+						<div class="col-sm-12">
+							<strong>Security Deposit: </strong><span>{{carData[0].security}}</span>
+						</div>
+						<div class="col-sm-12">
+							<strong>Per Day Price(INR) : </strong><span>{{carData[0].rentPerDay}}</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div> 
+	</div>           
+</div>
+<div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">
+	<form>
+	    <div class="form-group">
+	        <label for="input">Mobile No.</label>
+	        <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile number">
+	    </div>
+	    <div class="form-group">
+	        <label for="input">Email</label>
+	        <input type="email" class="form-control" id="email" placeholder="Email">
+	    </div>
+	    <div class="form-group">
+	        <label for="input">Adress</label>
+	        <textarea class="form-control" id="email" placeholder="Adress"></textarea>
+	    </div>
+	    <div class="form-group">
+	        <label for="input">From</label>
+	        <input type="date" class="form-control" id="fromDate" placeholder="from">
+	    </div>
+	    <div class="form-group">
+	        <label for="input">To</label>
+	        <input type="date" class="form-control" id="toDate" placeholder="to">
+	    </div>
+	    <div class="form-group">
+	        <label for="input">Total Amount</label>
+	        <span>5,000</span>
+	    </div>
+	    <button type="submit" class="btn btn-primary">Rent It Now</button>
+	</form>
+</div>
