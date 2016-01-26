@@ -1,6 +1,6 @@
 angular.module('mainCtrl', [])
 
-.controller("MainController", function($scope,$location,$http){
+.controller("MainController", function($scope,$location){
 	$scope.rentaCar = function(){
 			$location.path('/find');
 			console.log("Rent a car is called");
@@ -33,7 +33,7 @@ angular.module('mainCtrl', [])
 		}
 })
 
-.controller("CarsController", function($scope,$location,$http,$routeParams){
+.controller("CarsController", function($scope,$location,$routeParams){
 $scope.dataset = [];
 $http.get("../../app/models/cars.json")
        .then(function(response){ 
@@ -49,15 +49,15 @@ $scope.rentCar= function(){
  
 })
 
-.controller("DealerController", function($scope,$location,$http){
+.controller("DealerController", function($scope,$location){
 })
 
 
-.controller("RentYourCarController", function($scope,$location,$http){
+.controller("RentYourCarController", function($scope,$location){
 })	
 
 
-.controller("RentCarController", function($scope,$location,$http,$routeParams){
+.controller("RentCarController", function($scope,$location,$routeParams){
 $scope.carData = ""
 $http.get("../../app/models/" + $routeParams.param + ".json")
        .then(function(response){ 

@@ -1,32 +1,36 @@
 <car-Details></car-Details>
 
 <div class="custom-container">
-	<car-Details></car-Details>
-
+	
 	<div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">
-		<form>
+		<form name="rentCarForm" required>
 		    <div class="form-group">
 		        <label for="input">Mobile No.</label>
-		        <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile number">
+		        <input type="tel" name="userMobileNumber" class="form-control" id="mobileNumber" placeholder="Mobile number" 
+		        ng-model="userMobile">
 		    </div>
 		    <div class="form-group">
 		        <label for="input">Email</label>
-		        <input type="email" class="form-control" id="email" placeholder="Email">
+		        <input type="email" name="userEmailId" class="form-control" id="email" placeholder="Email" ng-model="userEmail">
+		        <div ng-messages="rentCarForm.userEmailId.$error">
+		            <div ng-message="required">This field is required</div>
+		            <div ng-message="userEmail">This is not a valid Email Id</div>
+		        </div>
 		    </div>
 		    <div class="form-group">
-		        <label for="input">Adress</label>
-		        <textarea class="form-control" id="email" placeholder="Adress"></textarea>
+		        <label for="input">Address</label>
+		        <textarea class="form-control" name="userAddress" id="email" placeholder="Adress" ng-model="userAddress"></textarea>
 		    </div>
 		    <div class="form-group">
 		        <label for="input">From</label>
-		        <input type="date" class="form-control" id="fromDate" placeholder="from">
+		        <input type="date" name="fromDate" class="form-control" id="fromDate" placeholder="from" ng-model="userFromDate">
 		    </div>
 		    <div class="form-group">
 		        <label for="input">To</label>
-		        <input type="date" class="form-control" id="toDate" placeholder="to">
+		        <input type="date" name="toDate" class="form-control" id="toDate" placeholder="to" ng-model="userToDate">
 		    </div>
 		    <div class="form-group">
-		        <label for="input">Total Amount</label>
+		        <label for="input" name="totalAmount" ng-model="userTotalAmount">Total Amount</label>
 		        <span>5,000</span>
 		    </div>
 		    <button type="submit" class="btn btn-primary">Rent It Now</button>
