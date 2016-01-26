@@ -62,7 +62,7 @@ $scope.carData = ""
 $http.get("../../app/models/" + $routeParams.param + ".json")
        .then(function(response){ 
        	$scope.carData = response.data; 
-        console.log($scope.carData[0]);
+        console.log($scope.carData);
        })
 
 
