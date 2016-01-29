@@ -22,3 +22,8 @@
 .custom-container{
 	margin-top: 80px;
 }
+
+.h-margin {
+	margin-left: 20px;
+    margin-right: 20px;
+}
