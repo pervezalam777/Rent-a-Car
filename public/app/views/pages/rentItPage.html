@@ -9,15 +9,17 @@
 					<form>
 					    <div class="form-group">
 					        <label for="input">Mobile No.</label>
-					        <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile number">
+					        <input type="tel" class="form-control" id="mobileNumber" ng-model="userMobileNumber" 
+					        placeholder="Mobile number">
+					        <span>{{validationMessage}}</span>
 					    </div>
 					    <div class="form-group">
 					        <label for="input">Email</label>
-					        <input type="email" class="form-control" id="email" placeholder="Email">
+					        <input type="email" class="form-control" id="email" ng-model="userEmailId" placeholder="Email">
 					    </div>
 					    <div class="form-group">
-					        <label for="input">Adress</label>
-					        <textarea class="form-control" id="email" placeholder="Adress"></textarea>
+					        <label for="input">Address</label>
+					        <textarea class="form-control" id="address" ng-model="userAddress" placeholder="Address"></textarea>
 					    </div>
 					    <div class="form-group">
 					        <label for="input">From</label>
@@ -31,7 +33,7 @@
 					        <label for="input">Total Amount</label>
 					        <span>5,000</span>
 					    </div>
-					    <button type="submit" class="btn btn-primary">Rent It Now</button>
+					    <button type="submit" class="btn btn-primary" ng-click="validateMobileNumber()">Rent It Now</button>
 					</form>
 				</div>
 			</div>
