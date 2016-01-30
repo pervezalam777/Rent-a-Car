@@ -59,6 +59,7 @@ angular.module('mainCtrl', [])
 	var currentDate = new Date();
 	$scope.dateValidationmsg= "";
 	$scope.days = 0;
+	$scope.rentedEnable = false;
 
 	/*Function to check if the dates are validate*/
 	$scope.validateDates = function(){
@@ -75,11 +76,12 @@ angular.module('mainCtrl', [])
 		}
 		else{
 			$scope.days = ($scope.toDate - $scope.fromDate)/(24*60*60*1000);
+			$scope.rentedEnable = true;
 		}
 	}
 
 
 	$scope.validateRentForm = function(){
-		/* Calculating rent per day*/
+	
 	}
 })

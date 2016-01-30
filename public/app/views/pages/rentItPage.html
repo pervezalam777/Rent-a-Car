@@ -42,7 +42,7 @@
 					        <label for="input">Total Amount</label>
 					        <span>{{days*carData.rentPerDay}}</span>
 					    </div>
-					    <button type="submit" class="btn btn-primary" ng-click="validateRentForm()">Rent It Now</button>
+					    <button type="submit" class="btn btn-primary" ng-click="validateRentForm()" ng-if="rentedEnable">Rent It Now</button>
 					</form>
 				</div>
 			</div>
