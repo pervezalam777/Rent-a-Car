@@ -1,6 +1,6 @@
 angular.module('mainCtrl', [])
 
-.controller("MainController", function($scope,$location){
+.controller("MainController", function($scope,$location,$http){
 	$scope.rentaCar = function(){
 			$location.path('/find');
 			console.log("Rent a car is called");
@@ -33,7 +33,7 @@ angular.module('mainCtrl', [])
 		}
 })
 
-.controller("CarsController", function($scope,$location,$routeParams){
+.controller("CarsController", function($scope,$location,$http,$routeParams){
 $scope.dataset = [];
 $http.get("../../app/models/cars.json")
        .then(function(response){ 
@@ -49,21 +49,32 @@ $scope.rentCar= function(){
  
 })
 
-.controller("DealerController", function($scope,$location){
+.controller("DealerController", function($scope,$location,$http){
 })
 
 
-.controller("RentYourCarController", function($scope,$location){
+.controller("RentYourCarController", function($scope,$location,$http){
 })	
 
 
-.controller("RentCarController", function($scope,$location,$routeParams){
+.controller("RentCarController", function($scope,$location,$http,$routeParams){
 $scope.carData = ""
 $http.get("../../app/models/" + $routeParams.param + ".json")
        .then(function(response){ 
        	$scope.carData = response.data; 
         console.log($scope.carData);
        })
+/*Validations for rent it form*/
+
+$scope.validateMobileNumber = function(){
+	
+ if($scope.userMobile = " " || isNaN($scope.userMobile)){
+ 	alert("Please enter a 10 digit mobile number")
+ 	$scope.userMobile = "";
+
+  }	
+}
+
 
 
 })
