@@ -60,9 +60,10 @@ angular.module('mainCtrl', [])
 	$scope.dateValidationmsg= "";
 	$scope.days = 0;
 
-	$scope.validateRentForm = function(){
-		if($scope.fromDate == undefined){
-			$scope.dateValidationmsg = "Please enter a valid date"
+	/*Function to check if the dates are validate*/
+	$scope.validateDates = function(){
+		if($scope.fromDate == undefined || $scope.toDate == undefined){
+			return;
 		}
 		else if($scope.toDate < $scope.fromDate){
 			$scope.dateValidationmsg = "To date should be later to from date";
@@ -72,9 +73,13 @@ angular.module('mainCtrl', [])
 			console.log(currentDate);
 			console.log($scope.fromDate);
 		}
+		else{
+			$scope.days = ($scope.toDate - $scope.fromDate)/(24*60*60*1000);
+		}
+	}
 
+
+	$scope.validateRentForm = function(){
 		/* Calculating rent per day*/
-		$scope.days = ($scope.toDate - $scope.fromDate)/(24*60*60*1000);
-
 	}
 })

@@ -25,12 +25,13 @@
 					    <div class="form-group">
 					        <label for="input">From</label>
 					        <input type="date" class="form-control" id="fromDate" placeholder="from" min="2016-01-01"  
-					        ng-model="fromDate" required>
+					        ng-model="fromDate" ng-change="validateDates()" required>
 					        <div>{{dateValidationmsg}}</div>
 					    </div>
 					    <div class="form-group">
 					        <label for="input">To</label>
-					        <input type="date" class="form-control" id="toDate" placeholder="to" ng-model="toDate" required>
+					        <input type="date" class="form-control" id="toDate" placeholder="to" min="2016-01-01" 
+					        ng-model="toDate" ng-change="validateDates()" required>
 					        <div>{{dateValidationmsg}}</div>
 					    </div>
 					    <div class="form-group">
