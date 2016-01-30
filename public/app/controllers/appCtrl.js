@@ -58,8 +58,6 @@ angular.module('mainCtrl', [])
 /*Validations for rent it form-validation of mobile number*/
 	$scope.validateMobileNumber = function(){
 
-		if($scope.userMobile = " " || isNaN($scope.userMobile)){
-			$scope.validationMessage = "Please enter a 10 digit mobile number";
-		}	
+			
 	}
 })
