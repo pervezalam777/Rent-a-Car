@@ -56,10 +56,18 @@ angular.module('mainCtrl', [])
 	})
 
 /*Validations for rent it form-validation of mobile number*/
-	$scope.validateMobileNumber = function(){
-		$scope.fromDate = "";
-		alert($scope.fromDate);
+	var currentDate = new Date();
+	$scope.dateValidationmsg= "";
 
-			
+	$scope.validateRentForm = function(){
+		if($scope.fromDate == undefined){
+			$scope.dateValidationmsg = "Please enter a valid date"
+		}
+		else if($scope.toDate < $scope.fromDate){
+			$scope.dateValidationmsg = "To date should be later to from date";
+		}
+		else if ($scope.fromDate < currentDate){
+			$scope.dateValidationmsg = "This is not a valid date"
+		}
 	}
 })

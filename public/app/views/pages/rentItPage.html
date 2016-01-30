@@ -24,17 +24,20 @@
 					    </div>
 					    <div class="form-group">
 					        <label for="input">From</label>
-					        <input type="date" class="form-control" id="fromDate" placeholder="from" min="2016-01-01" ng-model="fromDate" required>
+					        <input type="date" class="form-control" id="fromDate" placeholder="from" min="2016-01-01"  
+					        ng-model="fromDate" required>
+					        <div>{{dateValidationmsg}}</div>
 					    </div>
 					    <div class="form-group">
 					        <label for="input">To</label>
-					        <input type="date" class="form-control" id="toDate" placeholder="to" required>
+					        <input type="date" class="form-control" id="toDate" placeholder="to" ng-model="toDate" required>
+					        <div>{{dateValidationmsg}}</div>
 					    </div>
 					    <div class="form-group">
 					        <label for="input">Total Amount</label>
 					        <span>5,000</span>
 					    </div>
-					    <button type="submit" class="btn btn-primary" ng-click="validateMobileNumber()">Rent It Now</button>
+					    <button type="submit" class="btn btn-primary" ng-click="validateRentForm()">Rent It Now</button>
 					</form>
 				</div>
 			</div>
