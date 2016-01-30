@@ -69,10 +69,9 @@ $http.get("../../app/models/" + $routeParams.param + ".json")
 $scope.validateMobileNumber = function(){
 	
  if($scope.userMobile = " " || isNaN($scope.userMobile)){
- 	alert("Please enter a 10 digit mobile number")
- 	$scope.userMobile = "";
-
-  }	
+ 	$scope.validationMessage = "Please enter a 10 digit mobile number";
+  }
+ else if () 	
 }
 
 
