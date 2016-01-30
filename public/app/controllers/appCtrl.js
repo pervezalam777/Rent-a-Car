@@ -58,6 +58,7 @@ angular.module('mainCtrl', [])
 /*Validations for rent it form-validation of mobile number*/
 	var currentDate = new Date();
 	$scope.dateValidationmsg= "";
+	$scope.days = 0;
 
 	$scope.validateRentForm = function(){
 		if($scope.fromDate == undefined){
@@ -68,6 +69,12 @@ angular.module('mainCtrl', [])
 		}
 		else if ($scope.fromDate < currentDate){
 			$scope.dateValidationmsg = "This is not a valid date"
+			console.log(currentDate);
+			console.log($scope.fromDate);
 		}
+
+		/* Calculating rent per day*/
+		$scope.days = ($scope.toDate - $scope.fromDate)/(24*60*60*1000);
+
 	}
 })
