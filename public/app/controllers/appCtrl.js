@@ -70,8 +70,9 @@ $scope.validateMobileNumber = function(){
 	
  if($scope.userMobile = " " || isNaN($scope.userMobile)){
  	$scope.validationMessage = "Please enter a 10 digit mobile number";
-  }
- else if () 	
+ 	console.log($scope.userMobile);
+ 	
+  }	
 }
 
 
