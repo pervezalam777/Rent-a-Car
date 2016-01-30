@@ -60,6 +60,7 @@ angular.module('mainCtrl', [])
 	$scope.dateValidationmsg= "";
 	$scope.days = 0;
 	$scope.rentedEnable = false;
+	$scope.rentButton = "Rent It Now";
 
 	/*Function to check if the dates are validate*/
 	$scope.validateDates = function(){
@@ -81,7 +82,8 @@ angular.module('mainCtrl', [])
 	}
 
 
-	$scope.validateRentForm = function(){
-	
+	$scope.showConfirmationMsg = function(){
+		$scope.rentButton = "OK"
+		$scope.confirmationMsg = "We are submitting your request to the dealer. You will soon receive email communication for the same"
 	}
 })
