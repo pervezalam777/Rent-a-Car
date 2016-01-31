@@ -3,7 +3,6 @@ angular.module('mainCtrl', [])
 .controller("MainController", function($scope,$location,$http){
 	$scope.rentaCar = function(){
 		$location.path('/find');
-		$location.path('/find');			
 	};
 
 	$scope.addCarforRent = function(){
@@ -59,8 +58,8 @@ angular.module('mainCtrl', [])
 	var currentDate = new Date();
 	$scope.dateValidationmsg= "";
 	$scope.days = 0;
-	$scope.rentedEnable = false;
-	$scope.rentButton = "Rent It Now";
+	$scope.rentBtnEnable = false;
+	$scope.okBtnEnable = false;
 
 	/*Function to check if the dates are validate*/
 	$scope.validateDates = function(){
@@ -77,13 +76,16 @@ angular.module('mainCtrl', [])
 		}
 		else{
 			$scope.days = ($scope.toDate - $scope.fromDate)/(24*60*60*1000);
-			$scope.rentedEnable = true;
+			$scope.rentBtnEnable = true;
 		}
 	}
 
-
 	$scope.showConfirmationMsg = function(){
-		$scope.rentButton = "OK"
 		$scope.confirmationMsg = "We are submitting your request to the dealer. You will soon receive email communication for the same"
+		$scope.rentBtnEnable = false;
+		$scope.okBtnEnable = true;
+	}
+	$scope.gotoFindPage = function(){
+		$location.path('/find');
 	}
 })
