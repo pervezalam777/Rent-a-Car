@@ -35,8 +35,21 @@ angular.module('mainCtrl', ["carSerivces"])
 	.then(function(response){ 
 		$scope.dataset = response.data; 
 		$scope.carFilter = $routeParams.param;
-
 	})
+
+	$scope.checkPincode = function(){
+		var matchFound = false;
+		for(var i =0; i<$scope.dataset.length; i++){
+			if($routeParams.param == $scope.dataset[i].pincode){
+				matchFound = true;
+				break;
+			}
+		}
+		if ( matchFound === false){
+			$location.path('/find');
+		}
+
+	}
 
 	$scope.rentCar= function(){ 
 		$scope.carId = event.target.id;
