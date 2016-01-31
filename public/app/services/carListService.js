@@ -1,7 +1,7 @@
 /*Factory */
 angular.module('carSerivces', [])
 
-.factory("carService", function($http){
+.factory("carService", ["$http",function($http){
 	var service = {};
 
 	service.fetchCarList = function(){
@@ -15,4 +15,4 @@ angular.module('carSerivces', [])
 	return service;
 
 
-})
+}])
