@@ -1,6 +1,6 @@
 angular.module('mainCtrl', ["carSerivces"])
 
-.controller("MainController", function($scope,$location){
+.controller("MainController", ["$scope","$location", function($scope,$location){
 	$scope.rentaCar = function(){
 		$location.path('/find');
 	};
@@ -27,9 +27,9 @@ angular.module('mainCtrl', ["carSerivces"])
 			$location.path('/cars/' + $scope.pincode);
 		}
 	}
-})
+}])
 
-.controller("CarsController", function($scope,$location,$routeParams,carService){
+.controller("CarsController",["$scope","$location","$routeParams", "carService", function($scope,$location,$routeParams,carService){
 	$scope.dataset = [];
 	carService.fetchCarList()
 	.then(function(response){ 
@@ -42,13 +42,13 @@ angular.module('mainCtrl', ["carSerivces"])
 		$scope.carId = event.target.id;
 		$location.path('/rentform/' + $scope.carId);
 	}
-})
+}])
 
-.controller("DealerController", function($scope,$location){})
+.controller("DealerController", ["$scope", "$location", function($scope,$location){}])
 
-.controller("RentYourCarController", function($scope,$location){})	
+.controller("RentYourCarController", ["$scope", "$location", function($scope,$location){}])	
 
-.controller("RentCarController", function($scope,$location,$routeParams,carService){
+.controller("RentCarController", ["$scope","$location", "$routeParams", "carService", function($scope,$location,$routeParams,carService){
 	$scope.carData = ""
 	carService.fetchCarDetails($routeParams.param)
 	.then(function(response){ 
@@ -89,4 +89,4 @@ angular.module('mainCtrl', ["carSerivces"])
 	$scope.gotoFindPage = function(){
 		$location.path('/find');
 	}
-})
+}])
