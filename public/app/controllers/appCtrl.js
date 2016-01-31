@@ -1,6 +1,6 @@
-angular.module('mainCtrl', [])
+angular.module('mainCtrl', ["carSerivces"])
 
-.controller("MainController", function($scope,$location,$http){
+.controller("MainController", function($scope,$location){
 	$scope.rentaCar = function(){
 		$location.path('/find');
 	};
@@ -29,12 +29,13 @@ angular.module('mainCtrl', [])
 	}
 })
 
-.controller("CarsController", function($scope,$location,$http,$routeParams){
+.controller("CarsController", function($scope,$location,$routeParams,carService){
 	$scope.dataset = [];
-	$http.get("../../app/models/cars.json")
+	carService.fetchCarList()
 	.then(function(response){ 
 		$scope.dataset = response.data; 
 		$scope.carFilter = $routeParams.param;
+
 	})
 
 	$scope.rentCar= function(){ 
@@ -43,13 +44,13 @@ angular.module('mainCtrl', [])
 	}
 })
 
-.controller("DealerController", function($scope,$location,$http){})
+.controller("DealerController", function($scope,$location){})
 
-.controller("RentYourCarController", function($scope,$location,$http){})	
+.controller("RentYourCarController", function($scope,$location){})	
 
-.controller("RentCarController", function($scope,$location,$http,$routeParams){
+.controller("RentCarController", function($scope,$location,$routeParams,carService){
 	$scope.carData = ""
-	$http.get("../../app/models/" + $routeParams.param + ".json")
+	carService.fetchCarDetails($routeParams.param)
 	.then(function(response){ 
 		$scope.carData = response.data; 
 	})
