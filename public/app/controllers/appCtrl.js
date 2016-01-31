@@ -31,13 +31,15 @@ angular.module('mainCtrl', ["carSerivces"])
 
 .controller("CarsController",["$scope","$location","$routeParams", "carService", function($scope,$location,$routeParams,carService){
 	$scope.dataset = [];
+	$scope.showNoMatchMsg = false;
 	carService.fetchCarList()
 	.then(function(response){ 
 		$scope.dataset = response.data; 
 		$scope.carFilter = $routeParams.param;
+		checkPincode();
 	})
 
-	$scope.checkPincode = function(){
+	var checkPincode = function(){
 		var matchFound = false;
 		for(var i =0; i<$scope.dataset.length; i++){
 			if($routeParams.param == $scope.dataset[i].pincode){
@@ -45,10 +47,13 @@ angular.module('mainCtrl', ["carSerivces"])
 				break;
 			}
 		}
-		if ( matchFound === false){
-			$location.path('/find');
+		if ( matchFound == false){
+			$scope.showNoMatchMsg = true; 
 		}
+	}
 
+	$scope.gotoPincodePage = function(){
+		$location.path('/find');
 	}
 
 	$scope.rentCar= function(){ 
