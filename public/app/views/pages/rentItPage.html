@@ -3,38 +3,38 @@
 		<div class="panel-body">
 			<car-Details></car-Details>
 			<form class="user-form">
-			    <li class="form-group">
+			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input">Mobile No.</label>
 			        <input type="text" pattern="[0-9]{10}" class="form-control" id="mobileNumber" ng-model="userMobileNumber" placeholder="9999999999" title="Enter a 10 digit mobile number" required>
 			    </li>
-			    <li class="form-group">
+			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input">Email</label>
 			        <input type="email" class="form-control" id="email" ng-model="userEmailId" placeholder="Email"
 			        placeholder="username@domainname.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
 			        title="Please enter an email address username@domainname.com" required>
 			        
 			    </li>
-			    <li class="form-group">
+			    <li class="form-group col-sm-12">
 			        <label for="input">Address</label>
 			        <textarea class="form-control" id="address" ng-model="userAddress" placeholder="Address" required></textarea>
 			    </li>
-			    <li class="form-group">
+			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input">From</label>
 			        <input type="date" class="form-control" id="fromDate" placeholder="from" min="2016-01-01"  
 			        ng-model="fromDate" ng-change="validateDates()" required>
 			        <span>{{dateValidationmsg}}</span>
 			    </li>
-			    <li class="form-group">
+			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input">To</label>
 			        <input type="date" class="form-control" id="toDate" placeholder="to" min="2016-01-01" 
 			        ng-model="toDate" ng-change="validateDates()" required>
 			        <span>{{dateValidationmsg}}</span>
 			    </li>
-			    <li class="form-group">
+			    <li class="form-group col-sm-12 col-lg-6">
 			        <label>Number of days rented for:</label> 
 			        <span>{{days}}</span>
 			    </li>
-			    <li class="form-group">
+			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input">Total Amount</label>
 			        <span>{{days*carData.rentPerDay}}</span>
 			    </li>
