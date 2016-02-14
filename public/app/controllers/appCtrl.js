@@ -101,21 +101,21 @@ angular.module('mainCtrl', ["carSerivces"])
 	/*Function to check if the dates are validate*/
 	$scope.validateDates = function(){
 		if($scope.fromDate == undefined){
-			$scope.dateValidationmsg = "This is not a valid date";
+			$scope.fromDateValidationmsg = "This is not a valid date";
 			console.log($scope.fromDate)
 			return;
 			
 		}
 		else if($scope.toDate == undefined){
-			$scope.dateValidationmsg = "This is not a valid date";
+			$scope.toDateValidationmsg = "This is not a valid date";
 			return;
 			console.log($scope.fromDate)
 		}
 		else if($scope.toDate < $scope.fromDate){
-			$scope.dateValidationmsg = "To date should be later to from date";
+			$scope.toDateValidationmsg = "To date should be later to from date";
 		}
 		else if ($scope.fromDate < currentDate){
-			$scope.dateValidationmsg = "This is not a valid date"
+			$scope.fromDateValidationmsg = "This is not a valid date"
 			console.log(currentDate);
 			console.log($scope.fromDate);
 		}
