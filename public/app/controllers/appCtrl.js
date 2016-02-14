@@ -64,7 +64,14 @@ angular.module('mainCtrl', ["carSerivces"])
 
 .controller("DealerController", ["$scope", "$location", function($scope,$location){}])
 
-.controller("RentYourCarController", ["$scope", "$location", function($scope,$location){}])	
+.controller("RentYourCarController", ["$scope", "$location", function($scope,$location){
+	var currentDate = new Date();
+	
+
+
+
+
+}])	
 
 .controller("RentCarController", ["$scope","$location", "$routeParams", "carService", function($scope,$location,$routeParams,carService){
 	$scope.carData = ""

@@ -8,7 +8,7 @@
 				<form>
 					<div class="form-group">
 				        <label for="input">Your Id Number</label>
-				        <input type="text" class="form-control" id="dealerId" placeholder="Your ID Number ie 123456" pattern="[0-9]{6}" title="Enter your 6 digit dealer id" required>
+				        <input type="text" class="form-control" id="dealerId" placeholder="Your ID Number ie 123456" pattern="[1-9]{6}" title="Enter your 6 digit dealer id" required>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">brand</label>
@@ -24,14 +24,14 @@
 				    </div>
 				    <div class="form-group">
 				        <label for="input">seater</label>
-				        <input type="text" class="form-control" id="seater" placeholder="seater" required>
+				        <input type="text" class="form-control" id="seater" placeholder="seater" pattern="[2-6]{1}" title="Please enter the number of seats in between 2 and 6" required>
 				    </div>
 				    <div class="form-group">
-				        <label for="input"><input id="ac" type="checkbox">Air Conditioner</label>
+				        <label for="input"><input id="ac" type="checkbox" required>Air Conditioner</label>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">Purchase Year</label>
-				        <input type="date" class="form-control" id="purchaseYear" placeholder="Purchase year">
+				        <input type="date" class="form-control" id="purchaseYear" placeholder="Purchase year" min="2010-1-1" title="Please select a date after the specified year" ng-model="purchaseDate">
 				    </div>
 				    <div class="form-group">
 				        <label for="input">fueltype</label>
