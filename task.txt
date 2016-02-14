@@ -1,12 +1,11 @@
-1. Rent it button - successful message , redirect to pincode page
-2. Suppose pincode against no car- then show message no car and please re enter your pincode
-3. Put a car on rent page validation 
-4. Design 
+3. Put a car on rent page -validation to be done  
+4. Design (Done)
 5. HTML structure - bootstrap 
-6. Install Node.js
+7. Code Commenting
+8. File API Javascript and File upload
 
 Pervez 
-1. Download Multiple images of car 
-2. Go through HTML5 tags and their purposes
-3. Deployment Issues 
+1. Download Multiple images of car (In progress)
+2. Go through HTML5 tags and their purposes (In progress)
+3. Deployment Issues (In progress)
 4. Validation Message Styling
