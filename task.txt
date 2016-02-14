@@ -6,6 +6,11 @@
 
 Pervez 
 1. Download Multiple images of car (In progress)
-2. Go through HTML5 tags and their purposes (In progress)
-3. Deployment Issues (In progress)
-4. Validation Message Styling
+2. Go through HTML5 tags and their purposes (In progress) 21 feb.
+3. Deployment Issues (In progress) 28 Feb.
+4. Validation Message Styling 14 feb. 
+5. br tag should not be there 14 feb.
+6. use offest instead of blank div to center align 14 feb.
+7. use UL and Li instead of Div 14 feb.
+8. Try to use HTML5 tags section, nav, header, footer 21 feb.
+9. Dealer page to put a car on rent should be in two column  21 feb.
