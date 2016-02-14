@@ -21,7 +21,7 @@
 			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input" class="required">From</label>
 			        <input type="date" class="form-control" id="fromDate" placeholder="from" min="2016-01-01"  
-			        ng-model="fromDate" ng-change="validateDates()" required>
+			        ng-model="fromDate" onchange="$scope.validateDates()" required>
 			        <span>{{fromDateValidationmsg}}</span>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-6">

@@ -104,7 +104,6 @@ angular.module('mainCtrl', ["carSerivces"])
 			$scope.fromDateValidationmsg = "This is not a valid date";
 			console.log($scope.fromDate)
 			return;
-			
 		}
 		else if($scope.toDate == undefined){
 			$scope.toDateValidationmsg = "This is not a valid date";
