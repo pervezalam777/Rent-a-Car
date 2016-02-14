@@ -34,4 +34,6 @@ ul, ul li, li { list-style: none; margin: 0; padding: 0; }
 
 .user-form {
   margin-top: 30px;
-}   
+}
+
+.user-form .required:before { content:"*"; color: red}   
