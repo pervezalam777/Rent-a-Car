@@ -100,8 +100,16 @@ angular.module('mainCtrl', ["carSerivces"])
 
 	/*Function to check if the dates are validate*/
 	$scope.validateDates = function(){
-		if($scope.fromDate == undefined || $scope.toDate == undefined){
+		if($scope.fromDate == undefined){
+			$scope.dateValidationmsg = "This is not a valid date";
+			console.log($scope.fromDate)
 			return;
+			
+		}
+		else if($scope.toDate == undefined){
+			$scope.dateValidationmsg = "This is not a valid date";
+			return;
+			console.log($scope.fromDate)
 		}
 		else if($scope.toDate < $scope.fromDate){
 			$scope.dateValidationmsg = "To date should be later to from date";
@@ -117,12 +125,15 @@ angular.module('mainCtrl', ["carSerivces"])
 		}
 	}
 
-	$scope.showConfirmationMsg = function(){
-		$scope.confirmationMsg = "We are submitting your request to the dealer. You will soon receive email communication for the same"
-		$scope.rentBtnEnable = false;
-		$scope.okBtnEnable = true;
+$scope.showConfirmationMsg = function(){
+		var ele = angular.element(document.querySelector(".user-form"))[0]
+		if(ele.className.indexOf("ng-invalid") == -1){
+			$scope.confirmationMsg = "We are submitting your request to the dealer. You will soon receive email communication for the same"
+			$scope.rentBtnEnable = false;
+			$scope.okBtnEnable = true;
+		}
 	}
-	$scope.gotoFindPage = function(){
+		$scope.gotoFindPage = function(){
 		$location.path('/find');
 	}
 }])
