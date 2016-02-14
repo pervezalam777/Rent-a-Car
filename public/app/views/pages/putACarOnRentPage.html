@@ -1,75 +1,68 @@
-<div class="row">
-	<div class="col-md-3">
-	</div>
-	<div class="col-md-6">
-		<div class="panel panel-primary custom-container">
-			<div class="panel-body">
-				<div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
-				<form>
-					<div class="form-group">
-				        <label for="input">Your Id Number</label>
-				        <input type="text" class="form-control" id="dealerId" placeholder="Your ID Number ie 123456" pattern="[1-9]{6}" title="Enter your 6 digit dealer id" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">brand</label>
-				        <input type="text" class="form-control" id="brand" placeholder="Brand Name" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">model</label>
-				        <input type="text" class="form-control" id="model" placeholder="Car model" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">carColor</label>
-				        <input type="text" class="form-control" id="carColor" placeholder="Car color" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">seater</label>
-				        <input type="text" class="form-control" id="seater" placeholder="seater" pattern="[2-6]{1}" title="Please enter the number of seats in between 2 and 6" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input"><input id="ac" type="checkbox" required>Air Conditioner</label>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">Purchase Date</label>
-				        <input type="date" class="form-control" id="purchaseYear" placeholder="Purchase year" title="Please select a date after the specified year" ng-model="purchaseDate" ng-change = "validatePurchaseDate()">
-				    </div>
-				    <div class="form-group">
-				        <label for="input">Fuel Type</label>
-				        <input type="text" class="form-control" id="fueltype" placeholder="fuel type" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">KMs Run</label>
-				        <input type="text" class="form-control" id="kmRun" placeholder="Kilometer Run" pattern="[0-9]{10}" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">Adress</label>
-				        <textarea class="form-control" id="address" placeholder="Address" required></textarea>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">Pincode</label>
-				        <input type="text" class="form-control" id="pincode" placeholder="Pincode" pattern="[0-9]{6}" title="Please enter a pincode with 6 digit" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">rent Per Day</label>
-				        <input type="text" class="form-control" id="rentPerDay" placeholder="rent Per Day (INR)" pattern="[0-9]{4}" title="Rent should be 4 digits" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">Security Amount</label>
-				        <input type="text" class="form-control" id="security" placeholder="security (INR)" pattern="[0-9]{4}" title="Rent should be 4 digits" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">documents accepted</label>
-				        <input type="text" class="form-control" id="documents" placeholder="documents accepted" required>
-				    </div>
-				    <div class="form-group">
-				        <label for="input">select image</label>
-				        <div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-image-1" name="input-image" type="file" class="" accept="image/*"></div>
-				    </div>
-				    <button type="submit" class="btn btn-primary">Put It for Rent</button>
-				</form>
-			</div>
+<div class="col-md-6 col-md-offset-3">
+	<div class="panel panel-primary custom-container">
+		<div class="panel-body">
+			<form class="user-form">
+				<li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">Your Id Number</label>
+			        <input type="text" class="form-control" id="dealerId" placeholder="Your ID Number ie 123456" pattern="[1-9]{6}" title="Enter your 6 digit dealer id" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">brand</label>
+			        <input type="text" class="form-control" id="brand" placeholder="Brand Name" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">model</label>
+			        <input type="text" class="form-control" id="model" placeholder="Car model" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input"  class="required">carColor</label>
+			        <input type="text" class="form-control" id="carColor" placeholder="Car color" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">seater</label>
+			        <input type="text" class="form-control" id="seater" placeholder="seater" pattern="[2-6]{1}" title="Please enter the number of seats in between 2 and 6" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required"><input id="ac" type="checkbox" required>Air Conditioner</label>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">Purchase Date</label>
+			        <input type="date" class="form-control" id="purchaseYear" placeholder="Purchase year" title="Please select a date after the specified year" ng-model="purchaseDate" ng-change = "validatePurchaseDate()">
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">Fuel Type</label>
+			        <input type="text" class="form-control" id="fueltype" placeholder="fuel type" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">KMs Run</label>
+			        <input type="text" class="form-control" id="kmRun" placeholder="Kilometer Run" pattern="[0-9]{10}" required>
+			    </li>
+			    <li class="form-group col-sm-12">
+			        <label for="input" class="required">Adress</label>
+			        <textarea class="form-control" id="address" placeholder="Address" required></textarea>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">Pincode</label>
+			        <input type="text" class="form-control" id="pincode" placeholder="Pincode" pattern="[0-9]{6}" title="Please enter a pincode with 6 digit" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">rent Per Day</label>
+			        <input type="text" class="form-control" id="rentPerDay" placeholder="rent Per Day (INR)" pattern="[0-9]{4}" title="Rent should be 4 digits" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">Security Amount</label>
+			        <input type="text" class="form-control" id="security" placeholder="security (INR)" pattern="[0-9]{4}" title="Rent should be 4 digits" required>
+			    </li>
+			    <li class="form-group col-sm-12 col-lg-6">
+			        <label for="input" class="required">documents accepted</label>
+			        <input type="text" class="form-control" id="documents" placeholder="documents accepted" required>
+			    </li>
+			    <li class="form-group col-sm-12">
+			        <label for="input" class="required">select image</label>
+			        <div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-image-1" name="input-image" type="file" class="" accept="image/*"></div>
+			    </li>
+			    <button type="submit" class="btn btn-primary">Put It for Rent</button>
+			</form>
 		</div>
-	</div>
-	<div class="col-md-3">
 	</div>
 </div>
