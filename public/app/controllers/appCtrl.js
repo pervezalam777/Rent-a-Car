@@ -66,7 +66,18 @@ angular.module('mainCtrl', ["carSerivces"])
 
 .controller("RentYourCarController", ["$scope", "$location", function($scope,$location){
 	var currentDate = new Date();
+
+	$scope.validatePurchaseDate = function(){
+		if($scope.purchaseDate == undefined){
+		return
+		}
+		else if( $scope.purchaseDate > currentDate){
+			alert("Purchase date can't be from future");
+		}
+	}
+
 	
+
 
 
 

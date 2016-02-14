@@ -30,16 +30,16 @@
 				        <label for="input"><input id="ac" type="checkbox" required>Air Conditioner</label>
 				    </div>
 				    <div class="form-group">
-				        <label for="input">Purchase Year</label>
-				        <input type="date" class="form-control" id="purchaseYear" placeholder="Purchase year" min="2010-1-1" title="Please select a date after the specified year" ng-model="purchaseDate">
+				        <label for="input">Purchase Date</label>
+				        <input type="date" class="form-control" id="purchaseYear" placeholder="Purchase year" title="Please select a date after the specified year" ng-model="purchaseDate" ng-change = "validatePurchaseDate()">
 				    </div>
 				    <div class="form-group">
-				        <label for="input">fueltype</label>
+				        <label for="input">Fuel Type</label>
 				        <input type="text" class="form-control" id="fueltype" placeholder="fuel type" required>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">KMs Run</label>
-				        <input type="text" class="form-control" id="kmRun" placeholder="Kilometer Run" required>
+				        <input type="text" class="form-control" id="kmRun" placeholder="Kilometer Run" pattern="[0-9]{10}" required>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">Adress</label>
@@ -47,15 +47,15 @@
 				    </div>
 				    <div class="form-group">
 				        <label for="input">Pincode</label>
-				        <input type="text" class="form-control" id="pincode" placeholder="Pincode" required>
+				        <input type="text" class="form-control" id="pincode" placeholder="Pincode" pattern="[0-9]{6}" title="Please enter a pincode with 6 digit" required>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">rent Per Day</label>
-				        <input type="text" class="form-control" id="rentPerDay" placeholder="rent Per Day (INR)" required>
+				        <input type="text" class="form-control" id="rentPerDay" placeholder="rent Per Day (INR)" pattern="[0-9]{4}" title="Rent should be 4 digits" required>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">Security Amount</label>
-				        <input type="text" class="form-control" id="security" placeholder="security (INR)" required>
+				        <input type="text" class="form-control" id="security" placeholder="security (INR)" pattern="[0-9]{4}" title="Rent should be 4 digits" required>
 				    </div>
 				    <div class="form-group">
 				        <label for="input">documents accepted</label>
