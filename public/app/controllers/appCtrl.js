@@ -125,7 +125,7 @@ angular.module('mainCtrl', ["carSerivces"])
 		}
 	}
 
-$scope.showConfirmationMsg = function(){
+	$scope.showConfirmationMsg = function(){
 		var ele = angular.element(document.querySelector(".user-form"))[0]
 		if(ele.className.indexOf("ng-invalid") == -1){
 			$scope.confirmationMsg = "We are submitting your request to the dealer. You will soon receive email communication for the same"
