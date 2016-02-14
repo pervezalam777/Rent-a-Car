@@ -1,38 +1,9 @@
 <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
-
 	<div class="row">
 		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 small-padding">
 			<img ng-src="{{item.image}}" class="img-thumbnail img-responsive" alt="Cinque Terre" width="300px" height="300px">
 		</div>
 		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 small-padding">
-			<!--
-
-			<div class="row">
-				<div class="col-sm-12 small">
-					<div class="row">
-						<div class="col-sm-12">
-							
-						</div>
-					</div>
-					<br/>
-					<div class="row">
-						<div class="col-sm-12">
-							
-						</div>
-						<div class="col-sm-12">
-							
-						</div>
-						<div class="col-sm-12">
-							
-						</div>
-						<div class="col-xs-12 col-xs-offset-4">
-							
-						</div>
-					</div>
-				</div>
-				
-			</div>-->
-
 			<ul>
 				<li><strong>{{item.brand}} {{item.model}}</strong></li>
 				<li><strong>FUEL: </strong><span>{{item.fuelType}}</span></li>
@@ -40,9 +11,6 @@
 				<li><strong>Per Day Price(INR) : </strong><span>{{item.rentPerDay}}</span></li>
 				<li class="text-right"><button ng-click="rentCar()" type="button" class="btn btn-link" id="{{item.carId}}">Rent It!!</button></li>
 			</ul>
-
-
-			
 		</div> 
 	</div>           
 </div>
