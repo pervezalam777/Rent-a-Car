@@ -66,13 +66,17 @@ angular.module('mainCtrl', ["carSerivces"])
 
 .controller("RentYourCarController", ["$scope", "$location", function($scope,$location){
 	var currentDate = new Date();
-
+	var currentYear = currentDate.getFullYear(); 
 	$scope.validatePurchaseDate = function(){
-		if($scope.purchaseDate == undefined){
-		return
-		}
-		else if( $scope.purchaseDate > currentDate){
+		if( $scope.purchaseDate > currentDate){
 			alert("Purchase date can't be from future");
+			$scope.purchaseDate = currentDate;
+			alert($scope.purchaseDate.getFullYear());
+			alert(currentYear);
+		}
+		else if( (currentYear - ($scope.purchaseDate.getFullYear())) > 10 )
+		{
+			alert("This is the same year");
 		}
 	}
 
@@ -100,26 +104,16 @@ angular.module('mainCtrl', ["carSerivces"])
 
 	/*Function to check if the dates are validate*/
 	$scope.validateDates = function(){
-		if($scope.fromDate == undefined){
-			$scope.fromDateValidationmsg = "This is not a valid date";
-			console.log($scope.fromDate)
-			//return;
-			
-		}
-		else if($scope.toDate == undefined){
-			$scope.toDateValidationmsg = "This is not a valid date";
-			return;
-			console.log($scope.fromDate)
-		}
-		else if($scope.toDate < $scope.fromDate){
+		if($scope.toDate < $scope.fromDate){
 			$scope.toDateValidationmsg = "To date should be later to from date";
 		}
+		
 		else if ($scope.fromDate < currentDate){
 			$scope.fromDateValidationmsg = "This is not a valid date"
 			console.log(currentDate);
 			console.log($scope.fromDate);
 		}
-		else{
+		else if($scope.fromDate != undefined && $scope.toDate != undefined){
 			$scope.days = ($scope.toDate - $scope.fromDate)/(24*60*60*1000);
 			$scope.rentBtnEnable = true;
 		}
@@ -128,6 +122,7 @@ angular.module('mainCtrl', ["carSerivces"])
 	$scope.showConfirmationMsg = function(){
 		var ele = angular.element(document.querySelector(".user-form"))[0]
 		if(ele.className.indexOf("ng-invalid") == -1){
+			$(ele).find(":input:not([type='submit'])").attr("disabled", "disabled");
 			$scope.confirmationMsg = "We are submitting your request to the dealer. You will soon receive email communication for the same"
 			$scope.rentBtnEnable = false;
 			$scope.okBtnEnable = true;
