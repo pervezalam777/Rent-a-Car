@@ -67,25 +67,19 @@ angular.module('mainCtrl', ["carSerivces"])
 .controller("RentYourCarController", ["$scope", "$location", function($scope,$location){
 	var currentDate = new Date();
 	var currentYear = currentDate.getFullYear(); 
+
 	$scope.validatePurchaseDate = function(){
 		if( $scope.purchaseDate > currentDate){
 			alert("Purchase date can't be from future");
-			$scope.purchaseDate = currentDate;
-			alert($scope.purchaseDate.getFullYear());
-			alert(currentYear);
 		}
-		else if( (currentYear - ($scope.purchaseDate.getFullYear())) > 10 )
-		{
-			alert("This is the same year");
+		else if($scope.purchaseDate.getFullYear()){
+			var purchaseYear = $scope.purchaseDate.getFullYear();
+			var gapYear = currentYear - purchaseYear;
+			if(gapYear > 10){
+				alert("No one will buy a car older than 10")
+			}
 		}
 	}
-
-	
-
-
-
-
-
 }])	
 
 .controller("RentCarController", ["$scope","$location", "$routeParams", "carService", function($scope,$location,$routeParams,carService){
