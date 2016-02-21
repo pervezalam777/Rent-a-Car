@@ -4,7 +4,7 @@
 			<form class="user-form">
 				<li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">Your Id Number</label>
-			        <input type="text" class="form-control" id="dealerId" placeholder="Your ID Number ie 123456" pattern="[1-9]{6}" title="Enter your 6 digit dealer id" required>
+			        <input type="text" class="form-control" id="dealerId" placeholder="Your ID Number ie 123456" pattern="^([1-9]{6})\d*$" title="Enter your 6 digit dealer id" required>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">brand</label>
@@ -35,7 +35,7 @@
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">KMs Run</label>
-			        <input type="text" class="form-control" id="kmRun" placeholder="Kilometer Run" pattern="[0-9]{10}" required>
+			        <input type="text" class="form-control" id="kmRun" placeholder="Kilometer Run" pattern="^[1-9]\d*$" required>
 			    </li>
 			    <li class="form-group col-sm-4">
 			        <label for="input" class="required">Adress</label>
@@ -43,7 +43,7 @@
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">Pincode</label>
-			        <input type="text" class="form-control" id="pincode" placeholder="Pincode" pattern="[0-9]{6}" title="Please enter a pincode with 6 digit" required>
+			        <input type="text" class="form-control" id="pincode" placeholder="Pincode" pattern="^[1-9]{6}\d*$" title="Please enter a pincode with 6 digit" required>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">rent Per Day</label>
