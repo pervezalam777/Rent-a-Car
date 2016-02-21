@@ -47,11 +47,11 @@
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">rent Per Day</label>
-			        <input type="text" class="form-control" id="rentPerDay" placeholder="rent Per Day (INR)" pattern="[1-9]/dlida" title="Rent should be 4 digits" required>
+			        <input type="text" class="form-control" id="rentPerDay" placeholder="rent Per Day (INR)" pattern=".{0}|.{5,10}" title="Rent should be 4 digits" required>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">Security Amount</label>
-			        <input type="text" class="form-control" id="security" placeholder="security (INR)" pattern="[1-9]/d" title="Rent should be 4 digits" required>
+			        <input type="text" class="form-control" id="security" placeholder="security (INR)" pattern=".{0}|.{5,10}" title="Rent should be 4 digits" required>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-4">
 			        <label for="input" class="required">documents accepted</label>
@@ -59,7 +59,7 @@
 			    </li>
 			    <li class="form-group col-sm-12">
 			        <label for="input" class="required">select image</label>
-			        <div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-image-1" name="input-image" type="file" class="" accept="image/*"></div>
+			        <div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-image-1" name="input-image" type="file" class="" accept="image/*" required></div>
 			    </li>
 			    <li class="form-group col-sm-12">
 			    <button type="submit" class="btn btn-primary">Put It for Rent</button></li>

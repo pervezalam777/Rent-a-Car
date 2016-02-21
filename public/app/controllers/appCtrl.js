@@ -71,12 +71,14 @@ angular.module('mainCtrl', ["carSerivces"])
 	$scope.validatePurchaseDate = function(){
 		if( $scope.purchaseDate > currentDate){
 			alert("Purchase date can't be from future");
+			$scope.purchaseDate = currentDate;
 		}
 		else if($scope.purchaseDate.getFullYear()){
 			var purchaseYear = $scope.purchaseDate.getFullYear();
 			var gapYear = currentYear - purchaseYear;
 			if(gapYear > 10){
 				alert("No one will buy a car older than 10")
+				$scope.purchaseDate = currentDate;
 			}
 		}
 	}
