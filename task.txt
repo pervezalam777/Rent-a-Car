@@ -1,8 +1,9 @@
-3. Put a car on rent page -validation to be done  
-4. Design (Done)
-5. HTML structure - bootstrap 
-7. Code Commenting
-8. File API Javascript and File upload
+Gargi	
+1. Code Commenting
+2. File API Javascript and File upload
+3.Seperate JS files for Controllers
+4. User Serivces for Login and Registration form 
+
 
 Pervez 
 1. Download Multiple images of car (defer)
@@ -13,5 +14,5 @@ Pervez
 6. use offest instead of blank div to center align - 14 feb. (done)
 7. use UL and Li instead of Div - 14 feb. (done)
 8. Try to use HTML5 tags section, nav, header, footer - 21 feb.
-9. Dealer page to put a car on rent should be in two column - 21 feb. (done)
-10. keyboard change event on date selector - 21 feb (done)
+9. Use of Promise
+10. Caching 
