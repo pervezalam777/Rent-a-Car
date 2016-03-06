@@ -13,3 +13,6 @@ Pervez
 5. Try to use HTML5 tags section, nav, header, footer - 21 feb.
 6. Use of Promise
 7. Caching 
+8. Try to use HTML5 tags section, nav, header, footer - 21 feb.
+9. Use of Promise
+10. Caching 
