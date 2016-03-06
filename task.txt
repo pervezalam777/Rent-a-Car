@@ -1,16 +1,15 @@
 Gargi	
 1. Code Commenting
 2. File API Javascript and File upload
-3.Seperate JS files for Controllers
+3. Seperate JS files for Controllers
 4. User Serivces for Login and Registration form 
-
+5. Login and Registration router 
 
 Pervez 
 1. Download Multiple images of car (defer)
 2. Go through HTML5 tags and their purposes (In progress) - 21 feb.
 3. Deployment Issues (In progress) - 28 Feb.
 4. Validation Message Styling - 14 feb. (In progress) 
-5. br tag should not be there - 14 feb. (In Progress)
-8. Try to use HTML5 tags section, nav, header, footer - 21 feb.
-9. Use of Promise
-10. Caching 
+5. Try to use HTML5 tags section, nav, header, footer - 21 feb.
+6. Use of Promise
+7. Caching 
