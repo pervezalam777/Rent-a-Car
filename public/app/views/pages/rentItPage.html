@@ -21,13 +21,13 @@
 			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input" class="required">From</label>
 			        <input type="date" class="form-control" id="fromDate" placeholder="from" min="2016-01-01"  
-			        ng-model="fromDate" ng-change="validateDates()" onkeydown="return false" required>
+			        ng-model="fromDate" ng-change="rentCar.validateDates()" onkeydown="return false" required>
 			        <span>{{fromDateValidationmsg}}</span>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-6">
 			        <label for="input" class="required">To</label>
 			        <input type="date" class="form-control" id="toDate" placeholder="to" min="2016-01-01" 
-			        ng-model="toDate" ng-change="validateDates()" onkeydown="return false" required>
+			        ng-model="toDate" ng-change="rentCar.validateDates()" onkeydown="return false" required>
 			        <span>{{toDateValidationmsg}}</span>
 			    </li>
 			    <li class="form-group col-sm-12 col-lg-6">
@@ -38,11 +38,11 @@
 			        <label for="input">Total Amount</label>
 			        <span>{{days*carData.rentPerDay}}</span>
 			    </li>
-			    <button type="submit" class="btn btn-primary" ng-click="showConfirmationMsg()" ng-show="rentBtnEnable">
+			    <button type="submit" class="btn btn-primary" ng-click="rentCar.showConfirmationMsg()" ng-show="rentBtnEnable">
 			    	Rent It Now
 			    </button>
 
-			    <li>{{confirmationMsg}} <button type="submit" class="btn btn-primary" ng-click="gotoFindPage()" ng-show="okBtnEnable" >
+			    <li>{{confirmationMsg}} <button type="submit" class="btn btn-primary" ng-click="rentCar.gotoFindPage()" ng-show="okBtnEnable" >
 			    	OK
 			    </button></li>
 			    

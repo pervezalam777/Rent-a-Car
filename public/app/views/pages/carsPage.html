@@ -1,6 +1,6 @@
 <div class="panel panel-primary custom-container h-margin">
 	<div class="panel-body">
-	<div ng-show="showNoMatchMsg">No matches found as per the pincode you looked for....<button ng-click="gotoPincodePage()">Take me back to Pincode page</button></div>
+	<div ng-show="showNoMatchMsg">No matches found as per the pincode you looked for....<button ng-click="carPages.gotoPincodePage()">Take me back to Pincode page</button></div>
 
 		<div ng-repeat="item in dataset | filter: carFilter">
 			<car-item></car-item>

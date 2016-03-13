@@ -5,13 +5,13 @@ RentACarApp.config(["$routeProvider", "$locationProvider", function($routeProvid
 	$routeProvider
 		.when('/', {
 			templateUrl: 'views/pages/launchPage.html',
-			controller:  'MainController',
-			controllerAs: 'main'
+			controller:  'LaunchController',
+			controllerAs: 'launch'
 		})
 		.when('/find', {
 			templateUrl: 'views/pages/rentACarPage.html',
-			controller:  'MainController',
-			controllerAs: 'main'
+			controller:  'FindController',
+			controllerAs: 'find'
 		})
 		.when('/cars/:param', {
 			templateUrl: 'views/pages/carsPage.html',

@@ -1,6 +1,6 @@
 angular.module('mainCtrl', ["carSerivces"])
 
-.controller("MainController", ["$scope","$location", function($scope,$location){
+.controller("LaunchController", ["$scope","$location", function($scope,$location){
 	var vm = this;
 
 	vm.rentaCar = function(){
@@ -10,6 +10,10 @@ angular.module('mainCtrl', ["carSerivces"])
 	vm.addCarforRent = function(){
 		$location.path("/rentmycar");
 	};
+}])
+
+.controller("FindController", ["$scope","$location", function($scope,$location){
+	var vm = this;
 
 	vm.gotoCarList = function(){
 		var pincodeValue = 	$scope.pincode;
@@ -31,7 +35,10 @@ angular.module('mainCtrl', ["carSerivces"])
 	}
 }])
 
+
 .controller("CarsController",["$scope","$location","$routeParams", "carService", function($scope,$location,$routeParams,carService){
+	var vm = this;
+
 	$scope.dataset = [];
 	$scope.showNoMatchMsg = false;
 	carService.fetchCarList()
@@ -54,11 +61,11 @@ angular.module('mainCtrl', ["carSerivces"])
 		}
 	}
 
-	$scope.gotoPincodePage = function(){
+	vm.gotoPincodePage = function(){
 		$location.path('/find');
 	}
 
-	$scope.rentCar= function(){ 
+	vm.rentCar= function(){ 
 		$scope.carId = event.target.id;
 		$location.path('/rentform/' + $scope.carId);
 	}
@@ -67,10 +74,11 @@ angular.module('mainCtrl', ["carSerivces"])
 .controller("DealerController", ["$scope", "$location", function($scope,$location){}])
 
 .controller("RentYourCarController", ["$scope", "$location", function($scope,$location){
+	var vm = this;
 	var currentDate = new Date();
 	var currentYear = currentDate.getFullYear(); 
 
-	$scope.validatePurchaseDate = function(){
+	vm.validatePurchaseDate = function(){
 		if( $scope.purchaseDate > currentDate){
 			alert("Purchase date can't be from future");
 			$scope.purchaseDate = currentDate;
@@ -94,6 +102,7 @@ angular.module('mainCtrl', ["carSerivces"])
 	})
 
 /*Validations for rent it form-validation of mobile number*/
+    var vm = this;
 	var currentDate = new Date();
 	$scope.dateValidationmsg= "";
 	$scope.days = 0;
@@ -101,7 +110,7 @@ angular.module('mainCtrl', ["carSerivces"])
 	$scope.okBtnEnable = false;
 
 	/*Function to check if the dates are validate*/
-	$scope.validateDates = function(){
+	vm.validateDates = function(){
 		
 		if($scope.fromDate == undefined){
 			$scope.fromDateValidationmsg = "This is not a valid date";
@@ -126,7 +135,7 @@ angular.module('mainCtrl', ["carSerivces"])
 		}
 	}
 
-	$scope.showConfirmationMsg = function(){
+	vm.showConfirmationMsg = function(){
 		var ele = angular.element(document.querySelector(".user-form"))[0]
 		if(ele.className.indexOf("ng-invalid") == -1){
 			$(ele).find(":input:not([type='submit'])").attr("disabled", "disabled");
@@ -135,7 +144,7 @@ angular.module('mainCtrl', ["carSerivces"])
 			$scope.okBtnEnable = true;
 		}
 	}
-		$scope.gotoFindPage = function(){
+		vm.gotoFindPage = function(){
 		$location.path('/find');
 	}
 }])
