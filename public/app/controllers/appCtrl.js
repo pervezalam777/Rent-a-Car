@@ -1,15 +1,17 @@
 angular.module('mainCtrl', ["carSerivces"])
 
 .controller("MainController", ["$scope","$location", function($scope,$location){
-	$scope.rentaCar = function(){
+	var vm = this;
+
+	vm.rentaCar = function(){
 		$location.path('/find');
 	};
 
-	$scope.addCarforRent = function(){
+	vm.addCarforRent = function(){
 		$location.path("/rentmycar");
 	};
 
-	$scope.gotoCarList = function(){
+	vm.gotoCarList = function(){
 		var pincodeValue = 	$scope.pincode;
 		$scope.message = "";
 
