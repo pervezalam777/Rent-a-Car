@@ -1,34 +1,40 @@
-var RentACarApp = angular.module('appRoutes', ['ngRoute'])
+var RentACarApp = angular.module('appRoutes', ['ui.router'])
 
-RentACarApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
+RentACarApp.config(["$stateProvider", "$locationProvider", function($stateProvider, $locationProvider) {
 
-	$routeProvider
-		.when('/', {
+	$stateProvider
+		.state('home', {
+			url: '/',
 			templateUrl: 'views/pages/launchPage.html',
 			controller:  'LaunchController',
 			controllerAs: 'launch'
 		})
-		.when('/find', {
+		.state('find', {
+			url: '/find',
 			templateUrl: 'views/pages/rentACarPage.html',
 			controller:  'FindController',
 			controllerAs: 'find'
 		})
-		.when('/cars/:param', {
+		.state('cars', {
+			url: '/cars/:param',
 			templateUrl: 'views/pages/carsPage.html',
 			controller: 'CarsController',
 			controllerAs: 'carPages'
 		})
-		.when('/dealers',{
+		.state('dealers',{
+			url: '/dealers',
 			templateUrl: 'views/pages/dealersPage.html',
 			controller: 'DealerController',
 			controllerAs: 'dealerPage'
 		})
-		.when('/rentmycar', {
+		.state('rentmycar', {
+			url: '/rentmycar',
 			templateUrl: 'views/pages/putACarOnRentPage.html',
 			controller: 'RentYourCarController',
 			controllerAs: 'rentYourCar'
 		})
-		.when('/rentform/:param', {
+		.state('rentform', {
+			url: '/rentform/:param',
 			templateUrl: 'views/pages/rentItPage.html',
 			controller: 'RentCarController',
 			controllerAs: 'rentCar'
