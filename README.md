@@ -1,2 +1,2 @@
 # Rent-a-Car
-Dummy Project for Testing Purpose
+This project provide a basic understanding of Angular 1.x framework
